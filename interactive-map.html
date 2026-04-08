@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Map - ThermalGuard</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="header-left">
+      <a class="back-link" href="index.html">⬅ Back</a>
+      <div>
+        <h1>Interactive Heat Map</h1>
+        <p>Explore ward-level heat risk layers and intervention context.</p>
+      </div>
+    </div>
+    <nav class="page-nav">
+      <a href="dashboard.html">AI Dashboard</a>
+      <a href="mobile-report.html">Mobile Report</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <section class="map-grid">
+    <div class="map-panel">
+      <div id="interactive-map" class="map-canvas"></div>
+    </div>
+    <aside class="map-sidebar">
+      <div class="insight-card">
+        <h3>Ward Details</h3>
+        <div id="ward-details">Select a ward on the map.</div>
+      </div>
+    </aside>
+  </section>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="js/interactive-map-controller.js"></script>
+</body>
+</html>

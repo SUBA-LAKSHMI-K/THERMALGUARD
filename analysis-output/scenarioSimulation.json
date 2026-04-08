@@ -1,0 +1,61 @@
+{
+  "title": "What-If Scenario Analysis",
+  "scenarios": {
+    "massTreePlanting": {
+      "scenario": "Mass Tree Planting (50,000 trees)",
+      "investment": "₹75 crore",
+      "timeline": "12 months",
+      "citywideTempReduction": "1-1.5°C",
+      "longTermROI": "High (2030+)",
+      "beneficiaries": 2000000,
+      "effectiveness": "⭐⭐⭐⭐"
+    },
+    "universalCoolRoofs": {
+      "scenario": "Universal Cool Roofs (35,000 houses)",
+      "investment": "₹150 crore",
+      "timeline": "6 months",
+      "citywideTempReduction": "2-3°C",
+      "mediumTermROI": "Very High (5-7 years)",
+      "beneficiaries": 1400000,
+      "effectiveness": "⭐⭐⭐⭐⭐"
+    },
+    "wetlandRestoration": {
+      "scenario": "Wetland Restoration (15 water bodies)",
+      "investment": "₹45 crore",
+      "timeline": "18 months",
+      "citywideTempReduction": "0.5-1°C",
+      "cobenefits": "Biodiversity + groundwater recharge",
+      "beneficiaries": 800000,
+      "effectiveness": "⭐⭐⭐⭐"
+    },
+    "combinedApproach": {
+      "scenario": "Integrated Multi-Strategy",
+      "strategies": [
+        "Trees (20k)",
+        "Cool Roofs (20k)",
+        "Wetland (15)",
+        "Awareness"
+      ],
+      "investment": "₹200 crore",
+      "timeline": "18 months",
+      "citywideTempReduction": "4-5°C",
+      "riskDowngrade": "5 Critical → 2-3 Critical",
+      "buildResilience": "Yes",
+      "beneficiaries": 3500000,
+      "effectiveness": "⭐⭐⭐⭐⭐⭐"
+    },
+    "businessAsUsual": {
+      "scenario": "Business as Usual (Current trajectory)",
+      "investment": "₹160 crore (already planned)",
+      "timeline": "Ongoing",
+      "projectedChange": "+0.5°C (worse)",
+      "outlook": "Critical zones remain critical",
+      "vulnerabilityIncrease": "Yes",
+      "effectiveness": "⭐⭐"
+    }
+  },
+  "mostEffective": "Combined Approach (4.5-5.5°C reduction)",
+  "roiLeader": "Cool Roofs (3-5 year payback)",
+  "timelineLeader": "Cool Roofs (immediate impact)",
+  "recommendation": "Pursue combined approach prioritizing cool roofs for speed + trees for sustainability"
+}

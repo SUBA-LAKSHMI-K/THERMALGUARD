@@ -1,0 +1,1163 @@
+{
+  "metadata": {
+    "city": "Chennai",
+    "source_geojson": "chennai_wards.geojson",
+    "data_version": "1.0",
+    "generated_date": "2026-04-08",
+    "total_zones": 14,
+    "description": "NGO Intervention Portal dashboard data for Chennai zones — includes heat risk, NDVI, intervention programs, NGO activity, and budget allocation metrics."
+  },
+
+  "zones": [
+    {
+      "id": "relation/7876675",
+      "zone_number": 15,
+      "name": "Zone 15 Sholinganallur",
+      "short_name": "Sholinganallur",
+      "centroid": { "lat": 12.9069, "lng": 80.2388 },
+      "area_km2": 44.2,
+      "population": 312000,
+      "population_density_per_km2": 7059,
+
+      "heat_risk": {
+        "risk_level": "High",
+        "risk_score": 72,
+        "avg_surface_temp_c": 38.4,
+        "urban_heat_island_intensity": 2.8,
+        "impervious_surface_pct": 58,
+        "heat_alert_days_per_year": 34
+      },
+
+      "vegetation": {
+        "ndvi_score": 0.31,
+        "ndvi_trend": "declining",
+        "green_cover_pct": 18.2,
+        "tree_canopy_pct": 11.4,
+        "parks_count": 6,
+        "water_bodies_count": 3
+      },
+
+      "interventions": {
+        "total_programs": 8,
+        "active": 5,
+        "planned": 2,
+        "completed": 1,
+        "total_budget_inr": 12500000,
+        "spent_budget_inr": 7200000,
+        "programs": [
+          {
+            "id": "INT-SHO-001",
+            "type": "Urban Greening",
+            "name": "OMR Tech Corridor Tree Drive",
+            "description": "Mass tree plantation along OMR to reduce heat absorption near IT clusters.",
+            "ngo": "Green Chennai Initiative",
+            "ward_focus": ["Sholinganallur", "Perungudi"],
+            "start_date": "2025-06-01",
+            "end_date": "2026-05-31",
+            "status": "Active",
+            "budget_inr": 3200000,
+            "trees_planted": 4200,
+            "ndvi_improvement": 0.04,
+            "beneficiaries": 18000
+          },
+          {
+            "id": "INT-SHO-002",
+            "type": "Cool Roof Program",
+            "name": "IT Workforce Housing Cool Roofs",
+            "description": "Reflective cool roof coatings on low-income housing near Sholinganallur junction.",
+            "ngo": "ThermalGuard Foundation",
+            "ward_focus": ["Sholinganallur"],
+            "start_date": "2025-10-01",
+            "end_date": "2026-09-30",
+            "status": "Active",
+            "budget_inr": 2800000,
+            "houses_covered": 620,
+            "temp_reduction_c": 3.2,
+            "beneficiaries": 2480
+          },
+          {
+            "id": "INT-SHO-003",
+            "type": "Awareness Campaign",
+            "name": "Heatwave Preparedness Drive",
+            "description": "Community awareness on heat safety, hydration, and emergency response.",
+            "ngo": "Climate Aware Tamil Nadu",
+            "ward_focus": ["Sholinganallur"],
+            "start_date": "2026-03-01",
+            "end_date": "2026-06-30",
+            "status": "Active",
+            "budget_inr": 400000,
+            "people_reached": 25000,
+            "beneficiaries": 25000
+          }
+        ]
+      },
+
+      "ngo_activity": {
+        "active_ngos": ["Green Chennai Initiative", "ThermalGuard Foundation", "Climate Aware Tamil Nadu"],
+        "total_ngos_ever": 5,
+        "impact_score": 68
+      },
+
+      "government_priority": {
+        "priority_rank": 4,
+        "allocated_govt_budget_inr": 8000000,
+        "last_reviewed": "2026-02-15",
+        "notes": "Rapid IT corridor expansion increasing impervious surfaces. Needs urgent green buffer zones."
+      }
+    },
+
+    {
+      "id": "relation/7879836",
+      "zone_number": 14,
+      "name": "Zone 14 Perungudi",
+      "short_name": "Perungudi",
+      "centroid": { "lat": 12.9600, "lng": 80.2300 },
+      "area_km2": 22.7,
+      "population": 198000,
+      "population_density_per_km2": 8722,
+
+      "heat_risk": {
+        "risk_level": "High",
+        "risk_score": 74,
+        "avg_surface_temp_c": 38.8,
+        "urban_heat_island_intensity": 3.1,
+        "impervious_surface_pct": 62,
+        "heat_alert_days_per_year": 37
+      },
+
+      "vegetation": {
+        "ndvi_score": 0.27,
+        "ndvi_trend": "declining",
+        "green_cover_pct": 14.5,
+        "tree_canopy_pct": 8.9,
+        "parks_count": 4,
+        "water_bodies_count": 2
+      },
+
+      "interventions": {
+        "total_programs": 5,
+        "active": 3,
+        "planned": 2,
+        "completed": 0,
+        "total_budget_inr": 7800000,
+        "spent_budget_inr": 3100000,
+        "programs": [
+          {
+            "id": "INT-PER-001",
+            "type": "Urban Greening",
+            "name": "Perungudi Wetland Restoration",
+            "description": "Restoration of degraded wetland edges with native vegetation to reduce heat and improve biodiversity.",
+            "ngo": "WetlandWatch Chennai",
+            "ward_focus": ["Perungudi"],
+            "start_date": "2025-11-01",
+            "end_date": "2026-10-31",
+            "status": "Active",
+            "budget_inr": 4500000,
+            "trees_planted": 2800,
+            "ndvi_improvement": 0.05,
+            "beneficiaries": 12000
+          },
+          {
+            "id": "INT-PER-002",
+            "type": "Cool Roof Program",
+            "name": "SIDCO Industrial Cool Roof Pilot",
+            "description": "Pilot cool roof program on SIDCO industrial sheds to reduce ambient temperature.",
+            "ngo": "ThermalGuard Foundation",
+            "ward_focus": ["Perungudi"],
+            "start_date": "2026-01-15",
+            "end_date": "2026-12-15",
+            "status": "Active",
+            "budget_inr": 2000000,
+            "houses_covered": 320,
+            "temp_reduction_c": 2.9,
+            "beneficiaries": 1800
+          }
+        ]
+      },
+
+      "ngo_activity": {
+        "active_ngos": ["WetlandWatch Chennai", "ThermalGuard Foundation"],
+        "total_ngos_ever": 3,
+        "impact_score": 61
+      },
+
+      "government_priority": {
+        "priority_rank": 3,
+        "allocated_govt_budget_inr": 9500000,
+        "last_reviewed": "2026-02-20",
+        "notes": "Landfill proximity and wetland degradation creating compounded heat-pollution risk."
+      }
+    },
+
+    {
+      "id": "relation/7880733",
+      "zone_number": 9,
+      "name": "Zone 9 Teynampet",
+      "short_name": "Teynampet",
+      "centroid": { "lat": 13.0350, "lng": 80.2520 },
+      "area_km2": 15.3,
+      "population": 285000,
+      "population_density_per_km2": 18627,
+
+      "heat_risk": {
+        "risk_level": "Critical",
+        "risk_score": 88,
+        "avg_surface_temp_c": 40.6,
+        "urban_heat_island_intensity": 4.2,
+        "impervious_surface_pct": 81,
+        "heat_alert_days_per_year": 52
+      },
+
+      "vegetation": {
+        "ndvi_score": 0.15,
+        "ndvi_trend": "stable_low",
+        "green_cover_pct": 7.3,
+        "tree_canopy_pct": 4.1,
+        "parks_count": 3,
+        "water_bodies_count": 1
+      },
+
+      "interventions": {
+        "total_programs": 11,
+        "active": 6,
+        "planned": 3,
+        "completed": 2,
+        "total_budget_inr": 19800000,
+        "spent_budget_inr": 11400000,
+        "programs": [
+          {
+            "id": "INT-TEY-001",
+            "type": "Urban Greening",
+            "name": "Teynampet Street Tree Corridor",
+            "description": "Planting a continuous tree corridor on 12 major roads for shade and cooling.",
+            "ngo": "Urban Green Chennai",
+            "ward_focus": ["Teynampet"],
+            "start_date": "2025-07-01",
+            "end_date": "2026-06-30",
+            "status": "Active",
+            "budget_inr": 5200000,
+            "trees_planted": 6800,
+            "ndvi_improvement": 0.03,
+            "beneficiaries": 45000
+          },
+          {
+            "id": "INT-TEY-002",
+            "type": "Cool Roof Program",
+            "name": "High-Density Housing Cool Roof Project",
+            "description": "Retrofitting rooftops of tenements near Theagaraya Nagar with reflective coatings.",
+            "ngo": "ThermalGuard Foundation",
+            "ward_focus": ["Teynampet"],
+            "start_date": "2025-09-01",
+            "end_date": "2026-08-31",
+            "status": "Active",
+            "budget_inr": 6800000,
+            "houses_covered": 1540,
+            "temp_reduction_c": 3.8,
+            "beneficiaries": 7700
+          },
+          {
+            "id": "INT-TEY-003",
+            "type": "Water Conservation",
+            "name": "Rooftop Rainwater Harvesting Drive",
+            "description": "Installation of RWH systems in 400 residential buildings to reduce heat stress and water scarcity.",
+            "ngo": "WaterWise Chennai",
+            "ward_focus": ["Teynampet"],
+            "start_date": "2026-01-01",
+            "end_date": "2026-12-31",
+            "status": "Active",
+            "budget_inr": 3600000,
+            "structures_covered": 400,
+            "water_saved_liters_per_year": 18000000,
+            "beneficiaries": 8000
+          }
+        ]
+      },
+
+      "ngo_activity": {
+        "active_ngos": ["Urban Green Chennai", "ThermalGuard Foundation", "WaterWise Chennai", "Climate Aware Tamil Nadu"],
+        "total_ngos_ever": 7,
+        "impact_score": 75
+      },
+
+      "government_priority": {
+        "priority_rank": 1,
+        "allocated_govt_budget_inr": 22000000,
+        "last_reviewed": "2026-03-01",
+        "notes": "Highest density zone with critical UHI. Top priority for all heat mitigation programs."
+      }
+    },
+
+    {
+      "id": "relation/7880736",
+      "zone_number": 13,
+      "name": "Zone 13 Adyar",
+      "short_name": "Adyar",
+      "centroid": { "lat": 13.0012, "lng": 80.2565 },
+      "area_km2": 18.9,
+      "population": 241000,
+      "population_density_per_km2": 12751,
+
+      "heat_risk": {
+        "risk_level": "Moderate",
+        "risk_score": 58,
+        "avg_surface_temp_c": 36.7,
+        "urban_heat_island_intensity": 2.1,
+        "impervious_surface_pct": 64,
+        "heat_alert_days_per_year": 26
+      },
+
+      "vegetation": {
+        "ndvi_score": 0.38,
+        "ndvi_trend": "stable",
+        "green_cover_pct": 22.1,
+        "tree_canopy_pct": 15.3,
+        "parks_count": 9,
+        "water_bodies_count": 4
+      },
+
+      "interventions": {
+        "total_programs": 7,
+        "active": 4,
+        "planned": 1,
+        "completed": 2,
+        "total_budget_inr": 9200000,
+        "spent_budget_inr": 6800000,
+        "programs": [
+          {
+            "id": "INT-ADY-001",
+            "type": "Water Conservation",
+            "name": "Adyar River Bank Eco-Restoration",
+            "description": "Eco-restoration of 3.2 km Adyar river bank with native riparian species.",
+            "ngo": "Adyar Poonga Trust",
+            "ward_focus": ["Adyar"],
+            "start_date": "2025-04-01",
+            "end_date": "2026-03-31",
+            "status": "Completed",
+            "budget_inr": 4200000,
+            "trees_planted": 3900,
+            "ndvi_improvement": 0.07,
+            "beneficiaries": 60000
+          },
+          {
+            "id": "INT-ADY-002",
+            "type": "Urban Greening",
+            "name": "Besant Nagar Beach Road Greening",
+            "description": "Coastal road greening with heat-resistant species to reduce solar radiation.",
+            "ngo": "Green Chennai Initiative",
+            "ward_focus": ["Adyar"],
+            "start_date": "2025-10-01",
+            "end_date": "2026-09-30",
+            "status": "Active",
+            "budget_inr": 2800000,
+            "trees_planted": 2100,
+            "ndvi_improvement": 0.03,
+            "beneficiaries": 22000
+          }
+        ]
+      },
+
+      "ngo_activity": {
+        "active_ngos": ["Adyar Poonga Trust", "Green Chennai Initiative"],
+        "total_ngos_ever": 6,
+        "impact_score": 79
+      },
+
+      "government_priority": {
+        "priority_rank": 8,
+        "allocated_govt_budget_inr": 6000000,
+        "last_reviewed": "2026-01-10",
+        "notes": "Relatively better green cover. Focus on maintaining river health and coastal resilience."
+      }
+    },
+
+    {
+      "id": "relation/7883921",
+      "zone_number": 4,
+      "name": "Zone 4 Tondiarpet",
+      "short_name": "Tondiarpet",
+      "centroid": { "lat": 13.1178, "lng": 80.2900 },
+      "area_km2": 19.6,
+      "population": 329000,
+      "population_density_per_km2": 16786,
+
+      "heat_risk": {
+        "risk_level": "Critical",
+        "risk_score": 85,
+        "avg_surface_temp_c": 40.1,
+        "urban_heat_island_intensity": 4.0,
+        "impervious_surface_pct": 79,
+        "heat_alert_days_per_year": 48
+      },
+
+      "vegetation": {
+        "ndvi_score": 0.14,
+        "ndvi_trend": "declining",
+        "green_cover_pct": 6.8,
+        "tree_canopy_pct": 3.9,
+        "parks_count": 3,
+        "water_bodies_count": 1
+      },
+
+      "interventions": {
+        "total_programs": 9,
+        "active": 5,
+        "planned": 3,
+        "completed": 1,
+        "total_budget_inr": 15600000,
+        "spent_budget_inr": 8900000,
+        "programs": [
+          {
+            "id": "INT-TON-001",
+            "type": "Cool Roof Program",
+            "name": "North Chennai Industrial Worker Housing CRP",
+            "description": "Cool roof installation across 900 worker housing units near Ennore port area.",
+            "ngo": "ThermalGuard Foundation",
+            "ward_focus": ["Tondiarpet"],
+            "start_date": "2025-08-01",
+            "end_date": "2026-07-31",
+            "status": "Active",
+            "budget_inr": 5500000,
+            "houses_covered": 900,
+            "temp_reduction_c": 3.5,
+            "beneficiaries": 4500
+          },
+          {
+            "id": "INT-TON-002",
+            "type": "Urban Greening",
+            "name": "Tondiarpet Industrial Buffer Greening",
+            "description": "Creating green buffer zones between industrial areas and residential clusters.",
+            "ngo": "PollutionFree Chennai",
+            "ward_focus": ["Tondiarpet"],
+            "start_date": "2025-11-01",
+            "end_date": "2026-10-31",
+            "status": "Active",
+            "budget_inr": 4200000,
+            "trees_planted": 5600,
+            "ndvi_improvement": 0.04,
+            "beneficiaries": 35000
+          }
+        ]
+      },
+
+      "ngo_activity": {
+        "active_ngos": ["ThermalGuard Foundation", "PollutionFree Chennai", "Climate Aware Tamil Nadu"],
+        "total_ngos_ever": 4,
+        "impact_score": 63
+      },
+
+      "government_priority": {
+        "priority_rank": 2,
+        "allocated_govt_budget_inr": 18000000,
+        "last_reviewed": "2026-02-28",
+        "notes": "Industrial pollution + extreme heat. Vulnerable lower-income population. Second highest priority."
+      }
+    },
+
+    {
+      "id": "relation/7883985",
+      "zone_number": 5,
+      "name": "Zone 5 Royapuram",
+      "short_name": "Royapuram",
+      "centroid": { "lat": 13.1120, "lng": 80.2985 },
+      "area_km2": 14.8,
+      "population": 298000,
+      "population_density_per_km2": 20135,
+
+      "heat_risk": {
+        "risk_level": "Critical",
+        "risk_score": 89,
+        "avg_surface_temp_c": 41.0,
+        "urban_heat_island_intensity": 4.5,
+        "impervious_surface_pct": 85,
+        "heat_alert_days_per_year": 55
+      },
+
+      "vegetation": {
+        "ndvi_score": 0.12,
+        "ndvi_trend": "declining",
+        "green_cover_pct": 5.2,
+        "tree_canopy_pct": 2.8,
+        "parks_count": 2,
+        "water_bodies_count": 1
+      },
+
+      "interventions": {
+        "total_programs": 7,
+        "active": 4,
+        "planned": 2,
+        "completed": 1,
+        "total_budget_inr": 14200000,
+        "spent_budget_inr": 6600000,
+        "programs": [
+          {
+            "id": "INT-ROY-001",
+            "type": "Cool Roof Program",
+            "name": "Royapuram Fisherfolk Settlement CRP",
+            "description": "Cool roof intervention for fishing community settlements at George Town and Royapuram coast.",
+            "ngo": "ThermalGuard Foundation",
+            "ward_focus": ["Royapuram"],
+            "start_date": "2025-07-15",
+            "end_date": "2026-07-14",
+            "status": "Active",
+            "budget_inr": 6000000,
+            "houses_covered": 1320,
+            "temp_reduction_c": 4.1,
+            "beneficiaries": 6600
+          },
+          {
+            "id": "INT-ROY-002",
+            "type": "Urban Greening",
+            "name": "Vertical Garden Pilot - Royapuram",
+            "description": "Installing vertical gardens and green walls on government buildings to reduce radiant heat.",
+            "ngo": "Urban Green Chennai",
+            "ward_focus": ["Royapuram"],
+            "start_date": "2026-01-01",
+            "end_date": "2026-12-31",
+            "status": "Active",
+            "budget_inr": 2800000,
+            "structures_covered": 28,
+            "ndvi_improvement": 0.02,
+            "beneficiaries": 12000
+          }
+        ]
+      },
+
+      "ngo_activity": {
+        "active_ngos": ["ThermalGuard Foundation", "Urban Green Chennai"],
+        "total_ngos_ever": 4,
+        "impact_score": 55
+      },
+
+      "government_priority": {
+        "priority_rank": 1,
+        "allocated_govt_budget_inr": 20000000,
+        "last_reviewed": "2026-03-05",
+        "notes": "Most impervious, densest zone. Coastal fishing community highly vulnerable to heat. Urgent action needed."
+      }
+    },
+
+    {
+      "id": "relation/7885949",
+      "zone_number": 1,
+      "name": "Zone 1 Tiruvottiyur",
+      "short_name": "Tiruvottiyur",
+      "centroid": { "lat": 13.1567, "lng": 80.3020 },
+      "area_km2": 31.2,
+      "population": 264000,
+      "population_density_per_km2": 8461,
+
+      "heat_risk": {
+        "risk_level": "High",
+        "risk_score": 76,
+        "avg_surface_temp_c": 39.2,
+        "urban_heat_island_intensity": 3.3,
+        "impervious_surface_pct": 67,
+        "heat_alert_days_per_year": 41
+      },
+
+      "vegetation": {
+        "ndvi_score": 0.26,
+        "ndvi_trend": "declining",
+        "green_cover_pct": 16.1,
+        "tree_canopy_pct": 9.4,
+        "parks_count": 5,
+        "water_bodies_count": 2
+      },
+
+      "interventions": {
+        "total_programs": 6,
+        "active": 3,
+        "planned": 2,
+        "completed": 1,
+        "total_budget_inr": 10800000,
+        "spent_budget_inr": 4200000,
+        "programs": [
+          {
+            "id": "INT-TIR-001",
+            "type": "Urban Greening",
+            "name": "Ennore Creek Mangrove Restoration",
+            "description": "Restoration and expansion of mangrove patches near Ennore creek for cooling and coastal protection.",
+            "ngo": "CoastalGuard India",
+            "ward_focus": ["Tiruvottiyur"],
+            "start_date": "2025-10-15",
+            "end_date": "2026-10-14",
+            "status": "Active",
+            "budget_inr": 5800000,
+            "trees_planted": 9200,
+            "ndvi_improvement": 0.06,
+            "beneficiaries": 28000
+          }
+        ]
+      },
+
+      "ngo_activity": {
+        "active_ngos": ["CoastalGuard India", "PollutionFree Chennai"],
+        "total_ngos_ever": 3,
+        "impact_score": 58
+      },
+
+      "government_priority": {
+        "priority_rank": 5,
+        "allocated_govt_budget_inr": 11000000,
+        "last_reviewed": "2026-01-22",
+        "notes": "Industrial activity near Ennore. Mangrove loss accelerating. Needs coastal and thermal intervention."
+      }
+    },
+
+    {
+      "id": "relation/7886220",
+      "zone_number": 3,
+      "name": "Zone 3 Madhavaram",
+      "short_name": "Madhavaram",
+      "centroid": { "lat": 13.1497, "lng": 80.2342 },
+      "area_km2": 52.4,
+      "population": 287000,
+      "population_density_per_km2": 5477,
+
+      "heat_risk": {
+        "risk_level": "Moderate",
+        "risk_score": 54,
+        "avg_surface_temp_c": 36.4,
+        "urban_heat_island_intensity": 1.9,
+        "impervious_surface_pct": 49,
+        "heat_alert_days_per_year": 22
+      },
+
+      "vegetation": {
+        "ndvi_score": 0.42,
+        "ndvi_trend": "stable",
+        "green_cover_pct": 28.5,
+        "tree_canopy_pct": 18.2,
+        "parks_count": 12,
+        "water_bodies_count": 6
+      },
+
+      "interventions": {
+        "total_programs": 5,
+        "active": 3,
+        "planned": 1,
+        "completed": 1,
+        "total_budget_inr": 7200000,
+        "spent_budget_inr": 4800000,
+        "programs": [
+          {
+            "id": "INT-MAD-001",
+            "type": "Urban Greening",
+            "name": "Madhavaram Milk Colony Green Buffer",
+            "description": "Greening of transitional urban-peri-urban zones to maintain green cover.",
+            "ngo": "Green Chennai Initiative",
+            "ward_focus": ["Madhavaram"],
+            "start_date": "2025-08-01",
+            "end_date": "2026-07-31",
+            "status": "Active",
+            "budget_inr": 3200000,
+            "trees_planted": 5100,
+            "ndvi_improvement": 0.04,
+            "beneficiaries": 20000
+          }
+        ]
+      },
+
+      "ngo_activity": {
+        "active_ngos": ["Green Chennai Initiative"],
+        "total_ngos_ever": 3,
+        "impact_score": 71
+      },
+
+      "government_priority": {
+        "priority_rank": 11,
+        "allocated_govt_budget_inr": 4500000,
+        "last_reviewed": "2025-12-12",
+        "notes": "Lower risk due to larger peri-urban area. Maintain and expand green cover proactively."
+      }
+    },
+
+    {
+      "id": "relation/7887530",
+      "zone_number": 6,
+      "name": "Zone 6 Thiru. Vi. Ka. Nagar",
+      "short_name": "TVK Nagar",
+      "centroid": { "lat": 13.1050, "lng": 80.2580 },
+      "area_km2": 17.1,
+      "population": 321000,
+      "population_density_per_km2": 18771,
+
+      "heat_risk": {
+        "risk_level": "Critical",
+        "risk_score": 87,
+        "avg_surface_temp_c": 40.8,
+        "urban_heat_island_intensity": 4.3,
+        "impervious_surface_pct": 83,
+        "heat_alert_days_per_year": 51
+      },
+
+      "vegetation": {
+        "ndvi_score": 0.13,
+        "ndvi_trend": "declining",
+        "green_cover_pct": 5.8,
+        "tree_canopy_pct": 3.1,
+        "parks_count": 3,
+        "water_bodies_count": 1
+      },
+
+      "interventions": {
+        "total_programs": 8,
+        "active": 5,
+        "planned": 2,
+        "completed": 1,
+        "total_budget_inr": 16400000,
+        "spent_budget_inr": 9200000,
+        "programs": [
+          {
+            "id": "INT-TVK-001",
+            "type": "Cool Roof Program",
+            "name": "TVK Nagar Slum Cluster Cool Roof",
+            "description": "Reflective roof coatings for informal settlements in Kolathur and Villivakkam.",
+            "ngo": "ThermalGuard Foundation",
+            "ward_focus": ["TVK Nagar"],
+            "start_date": "2025-06-01",
+            "end_date": "2026-05-31",
+            "status": "Active",
+            "budget_inr": 7200000,
+            "houses_covered": 1680,
+            "temp_reduction_c": 3.9,
+            "beneficiaries": 8400
+          },
+          {
+            "id": "INT-TVK-002",
+            "type": "Urban Greening",
+            "name": "Cooum River Side Greening - North",
+            "description": "Planting shade trees along Cooum river banks in Zone 6 stretch.",
+            "ngo": "Urban Green Chennai",
+            "ward_focus": ["TVK Nagar"],
+            "start_date": "2025-12-01",
+            "end_date": "2026-11-30",
+            "status": "Active",
+            "budget_inr": 3800000,
+            "trees_planted": 4400,
+            "ndvi_improvement": 0.04,
+            "beneficiaries": 30000
+          }
+        ]
+      },
+
+      "ngo_activity": {
+        "active_ngos": ["ThermalGuard Foundation", "Urban Green Chennai", "WaterWise Chennai"],
+        "total_ngos_ever": 5,
+        "impact_score": 66
+      },
+
+      "government_priority": {
+        "priority_rank": 2,
+        "allocated_govt_budget_inr": 19500000,
+        "last_reviewed": "2026-03-02",
+        "notes": "Dense residential with high thermal stress. Large vulnerable population. Critical zone."
+      }
+    },
+
+    {
+      "id": "relation/7887722",
+      "zone_number": 8,
+      "name": "Zone 8 Anna Nagar",
+      "short_name": "Anna Nagar",
+      "centroid": { "lat": 13.0850, "lng": 80.2100 },
+      "area_km2": 21.5,
+      "population": 295000,
+      "population_density_per_km2": 13721,
+
+      "heat_risk": {
+        "risk_level": "Moderate",
+        "risk_score": 60,
+        "avg_surface_temp_c": 37.1,
+        "urban_heat_island_intensity": 2.4,
+        "impervious_surface_pct": 69,
+        "heat_alert_days_per_year": 28
+      },
+
+      "vegetation": {
+        "ndvi_score": 0.35,
+        "ndvi_trend": "stable",
+        "green_cover_pct": 21.6,
+        "tree_canopy_pct": 14.8,
+        "parks_count": 11,
+        "water_bodies_count": 2
+      },
+
+      "interventions": {
+        "total_programs": 6,
+        "active": 3,
+        "planned": 2,
+        "completed": 1,
+        "total_budget_inr": 8900000,
+        "spent_budget_inr": 5200000,
+        "programs": [
+          {
+            "id": "INT-ANN-001",
+            "type": "Urban Greening",
+            "name": "Anna Nagar Tower Park Expansion",
+            "description": "Expanding tree cover around Tower Park and linking green corridors through residential blocks.",
+            "ngo": "Urban Green Chennai",
+            "ward_focus": ["Anna Nagar"],
+            "start_date": "2025-09-01",
+            "end_date": "2026-08-31",
+            "status": "Active",
+            "budget_inr": 3600000,
+            "trees_planted": 3800,
+            "ndvi_improvement": 0.03,
+            "beneficiaries": 42000
+          }
+        ]
+      },
+
+      "ngo_activity": {
+        "active_ngos": ["Urban Green Chennai", "Climate Aware Tamil Nadu"],
+        "total_ngos_ever": 5,
+        "impact_score": 74
+      },
+
+      "government_priority": {
+        "priority_rank": 9,
+        "allocated_govt_budget_inr": 5500000,
+        "last_reviewed": "2026-01-15",
+        "notes": "Planned layout with existing green infrastructure. Maintain and enhance thermal comfort."
+      }
+    },
+
+    {
+      "id": "relation/7888246",
+      "zone_number": 7,
+      "name": "Zone 7 Ambattur",
+      "short_name": "Ambattur",
+      "centroid": { "lat": 13.0982, "lng": 80.1688 },
+      "area_km2": 64.8,
+      "population": 412000,
+      "population_density_per_km2": 6358,
+
+      "heat_risk": {
+        "risk_level": "High",
+        "risk_score": 70,
+        "avg_surface_temp_c": 38.1,
+        "urban_heat_island_intensity": 2.7,
+        "impervious_surface_pct": 61,
+        "heat_alert_days_per_year": 31
+      },
+
+      "vegetation": {
+        "ndvi_score": 0.33,
+        "ndvi_trend": "declining",
+        "green_cover_pct": 19.8,
+        "tree_canopy_pct": 12.1,
+        "parks_count": 14,
+        "water_bodies_count": 5
+      },
+
+      "interventions": {
+        "total_programs": 9,
+        "active": 5,
+        "planned": 3,
+        "completed": 1,
+        "total_budget_inr": 13600000,
+        "spent_budget_inr": 7100000,
+        "programs": [
+          {
+            "id": "INT-AMB-001",
+            "type": "Urban Greening",
+            "name": "Ambattur Industrial Estate Green Belt",
+            "description": "Establishing green belts around SIDCO/SIAT industrial cluster to reduce ambient heat and pollution.",
+            "ngo": "PollutionFree Chennai",
+            "ward_focus": ["Ambattur"],
+            "start_date": "2025-09-15",
+            "end_date": "2026-09-14",
+            "status": "Active",
+            "budget_inr": 5400000,
+            "trees_planted": 7200,
+            "ndvi_improvement": 0.05,
+            "beneficiaries": 38000
+          },
+          {
+            "id": "INT-AMB-002",
+            "type": "Water Conservation",
+            "name": "Ambattur Lake Restoration",
+            "description": "Restoration of Ambattur Lake periphery for urban cooling and biodiversity.",
+            "ngo": "WetlandWatch Chennai",
+            "ward_focus": ["Ambattur"],
+            "start_date": "2025-12-01",
+            "end_date": "2027-05-31",
+            "status": "Active",
+            "budget_inr": 4800000,
+            "water_bodies_restored": 1,
+            "ndvi_improvement": 0.06,
+            "beneficiaries": 55000
+          }
+        ]
+      },
+
+      "ngo_activity": {
+        "active_ngos": ["PollutionFree Chennai", "WetlandWatch Chennai", "Green Chennai Initiative"],
+        "total_ngos_ever": 6,
+        "impact_score": 69
+      },
+
+      "government_priority": {
+        "priority_rank": 6,
+        "allocated_govt_budget_inr": 10500000,
+        "last_reviewed": "2026-02-05",
+        "notes": "Large industrial zone with growing residential pressure. Lake restoration critical for thermal buffer."
+      }
+    },
+
+    {
+      "id": "relation/7888502",
+      "zone_number": 10,
+      "name": "Zone 10 Kodambakkam",
+      "short_name": "Kodambakkam",
+      "centroid": { "lat": 13.0521, "lng": 80.2213 },
+      "area_km2": 16.7,
+      "population": 312000,
+      "population_density_per_km2": 18682,
+
+      "heat_risk": {
+        "risk_level": "Critical",
+        "risk_score": 83,
+        "avg_surface_temp_c": 39.9,
+        "urban_heat_island_intensity": 3.8,
+        "impervious_surface_pct": 78,
+        "heat_alert_days_per_year": 46
+      },
+
+      "vegetation": {
+        "ndvi_score": 0.18,
+        "ndvi_trend": "declining",
+        "green_cover_pct": 8.9,
+        "tree_canopy_pct": 5.2,
+        "parks_count": 4,
+        "water_bodies_count": 1
+      },
+
+      "interventions": {
+        "total_programs": 8,
+        "active": 5,
+        "planned": 2,
+        "completed": 1,
+        "total_budget_inr": 14800000,
+        "spent_budget_inr": 8600000,
+        "programs": [
+          {
+            "id": "INT-KOD-001",
+            "type": "Cool Roof Program",
+            "name": "Kodambakkam Commercial District CRP",
+            "description": "Cool roof for mixed-use buildings in Kodambakkam High Road and Arcot Road corridor.",
+            "ngo": "ThermalGuard Foundation",
+            "ward_focus": ["Kodambakkam"],
+            "start_date": "2025-07-01",
+            "end_date": "2026-06-30",
+            "status": "Active",
+            "budget_inr": 6200000,
+            "houses_covered": 980,
+            "temp_reduction_c": 3.4,
+            "beneficiaries": 9800
+          },
+          {
+            "id": "INT-KOD-002",
+            "type": "Awareness Campaign",
+            "name": "Nungambakkam-Kodambakkam Heat Literacy Drive",
+            "description": "Community health workers visiting homes to train on heat protection methods.",
+            "ngo": "Climate Aware Tamil Nadu",
+            "ward_focus": ["Kodambakkam"],
+            "start_date": "2026-03-15",
+            "end_date": "2026-06-15",
+            "status": "Active",
+            "budget_inr": 800000,
+            "people_reached": 36000,
+            "beneficiaries": 36000
+          }
+        ]
+      },
+
+      "ngo_activity": {
+        "active_ngos": ["ThermalGuard Foundation", "Climate Aware Tamil Nadu", "Urban Green Chennai"],
+        "total_ngos_ever": 5,
+        "impact_score": 64
+      },
+
+      "government_priority": {
+        "priority_rank": 3,
+        "allocated_govt_budget_inr": 16000000,
+        "last_reviewed": "2026-02-25",
+        "notes": "Dense commercial-residential mix. High UHI. Cool roof and green shading critical."
+      }
+    },
+
+    {
+      "id": "relation/7888805",
+      "zone_number": 12,
+      "name": "Zone 12 Alandur",
+      "short_name": "Alandur",
+      "centroid": { "lat": 13.0020, "lng": 80.2040 },
+      "area_km2": 23.8,
+      "population": 268000,
+      "population_density_per_km2": 11260,
+
+      "heat_risk": {
+        "risk_level": "Moderate",
+        "risk_score": 62,
+        "avg_surface_temp_c": 37.4,
+        "urban_heat_island_intensity": 2.5,
+        "impervious_surface_pct": 66,
+        "heat_alert_days_per_year": 29
+      },
+
+      "vegetation": {
+        "ndvi_score": 0.30,
+        "ndvi_trend": "stable",
+        "green_cover_pct": 18.8,
+        "tree_canopy_pct": 11.9,
+        "parks_count": 8,
+        "water_bodies_count": 3
+      },
+
+      "interventions": {
+        "total_programs": 6,
+        "active": 3,
+        "planned": 2,
+        "completed": 1,
+        "total_budget_inr": 9100000,
+        "spent_budget_inr": 5400000,
+        "programs": [
+          {
+            "id": "INT-ALA-001",
+            "type": "Urban Greening",
+            "name": "Alandur Metro Corridor Greening",
+            "description": "Green landscaping along metro line 1 corridor in Alandur to reduce surface heat.",
+            "ngo": "Urban Green Chennai",
+            "ward_focus": ["Alandur"],
+            "start_date": "2025-10-01",
+            "end_date": "2026-09-30",
+            "status": "Active",
+            "budget_inr": 3400000,
+            "trees_planted": 2900,
+            "ndvi_improvement": 0.03,
+            "beneficiaries": 28000
+          }
+        ]
+      },
+
+      "ngo_activity": {
+        "active_ngos": ["Urban Green Chennai", "Green Chennai Initiative"],
+        "total_ngos_ever": 4,
+        "impact_score": 70
+      },
+
+      "government_priority": {
+        "priority_rank": 10,
+        "allocated_govt_budget_inr": 5200000,
+        "last_reviewed": "2025-12-28",
+        "notes": "Moderate risk. Good opportunity to integrate green infrastructure with metro development."
+      }
+    },
+
+    {
+      "id": "relation/7888806",
+      "zone_number": 11,
+      "name": "Zone 11 Valasaravakkam",
+      "short_name": "Valasaravakkam",
+      "centroid": { "lat": 13.0490, "lng": 80.1723 },
+      "area_km2": 38.6,
+      "population": 356000,
+      "population_density_per_km2": 9223,
+
+      "heat_risk": {
+        "risk_level": "Low",
+        "risk_score": 42,
+        "avg_surface_temp_c": 35.2,
+        "urban_heat_island_intensity": 1.4,
+        "impervious_surface_pct": 44,
+        "heat_alert_days_per_year": 14
+      },
+
+      "vegetation": {
+        "ndvi_score": 0.48,
+        "ndvi_trend": "improving",
+        "green_cover_pct": 31.4,
+        "tree_canopy_pct": 22.6,
+        "parks_count": 18,
+        "water_bodies_count": 7
+      },
+
+      "interventions": {
+        "total_programs": 4,
+        "active": 2,
+        "planned": 1,
+        "completed": 1,
+        "total_budget_inr": 5800000,
+        "spent_budget_inr": 3600000,
+        "programs": [
+          {
+            "id": "INT-VAL-001",
+            "type": "Water Conservation",
+            "name": "Porur Lake Biodiversity Enhancement",
+            "description": "Enhancing biodiversity around Porur Lake to sustain its urban cooling function.",
+            "ngo": "WetlandWatch Chennai",
+            "ward_focus": ["Valasaravakkam"],
+            "start_date": "2025-07-01",
+            "end_date": "2026-12-31",
+            "status": "Active",
+            "budget_inr": 3200000,
+            "water_bodies_restored": 1,
+            "ndvi_improvement": 0.05,
+            "beneficiaries": 72000
+          }
+        ]
+      },
+
+      "ngo_activity": {
+        "active_ngos": ["WetlandWatch Chennai", "Green Chennai Initiative"],
+        "total_ngos_ever": 4,
+        "impact_score": 83
+      },
+
+      "government_priority": {
+        "priority_rank": 14,
+        "allocated_govt_budget_inr": 3000000,
+        "last_reviewed": "2025-11-20",
+        "notes": "Lowest risk zone. Preserve existing green-blue infrastructure. Model zone for best practices."
+      }
+    }
+  ],
+
+  "city_summary": {
+    "total_population": 4178000,
+    "total_area_km2": 401.6,
+    "zones_by_risk": {
+      "Critical": ["Zone 9 Teynampet", "Zone 4 Tondiarpet", "Zone 5 Royapuram", "Zone 6 TVK Nagar", "Zone 10 Kodambakkam"],
+      "High": ["Zone 15 Sholinganallur", "Zone 14 Perungudi", "Zone 1 Tiruvottiyur", "Zone 7 Ambattur"],
+      "Moderate": ["Zone 13 Adyar", "Zone 3 Madhavaram", "Zone 8 Anna Nagar", "Zone 12 Alandur"],
+      "Low": ["Zone 11 Valasaravakkam"]
+    },
+    "total_active_interventions": 52,
+    "total_ngo_budget_inr": 165700000,
+    "total_govt_budget_inr": 158700000,
+    "total_trees_planted": 67200,
+    "total_houses_with_cool_roofs": 9360,
+    "total_beneficiaries": 681280,
+    "city_avg_ndvi": 0.28,
+    "city_avg_risk_score": 69.6,
+    "top_active_ngos": [
+      { "name": "ThermalGuard Foundation", "active_zones": 7, "specialty": "Cool Roof Programs" },
+      { "name": "Urban Green Chennai", "active_zones": 6, "specialty": "Urban Greening" },
+      { "name": "Green Chennai Initiative", "active_zones": 5, "specialty": "Urban Greening" },
+      { "name": "WetlandWatch Chennai", "active_zones": 4, "specialty": "Wetland & Water Body Restoration" },
+      { "name": "PollutionFree Chennai", "active_zones": 3, "specialty": "Industrial Green Buffers" },
+      { "name": "Climate Aware Tamil Nadu", "active_zones": 4, "specialty": "Awareness Campaigns" },
+      { "name": "WaterWise Chennai", "active_zones": 2, "specialty": "Water Conservation" },
+      { "name": "CoastalGuard India", "active_zones": 1, "specialty": "Coastal & Mangrove Restoration" },
+      { "name": "Adyar Poonga Trust", "active_zones": 1, "specialty": "River Restoration" }
+    ],
+    "intervention_types_summary": {
+      "Cool Roof Program": { "count": 10, "total_budget_inr": 66500000, "houses_covered": 9360 },
+      "Urban Greening": { "count": 18, "total_budget_inr": 59200000, "trees_planted": 67200 },
+      "Water Conservation": { "count": 7, "total_budget_inr": 26800000, "water_bodies_restored": 3 },
+      "Awareness Campaign": { "count": 4, "total_budget_inr": 4600000, "people_reached": 96000 }
+    }
+  }
+}

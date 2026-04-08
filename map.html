@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermal Map</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+
+<header class="page-header">
+    <div class="header-left">
+        <a class="back-link" href="index.html">⬅ Back</a>
+        <div>
+            <h1>Thermal Map</h1>
+            <p>Interactive Chennai ward heat risk visualization.</p>
+        </div>
+    </div>
+    <nav class="page-nav">
+        <a href="ward-data.html">Ward Data</a>
+        <a href="index.html">Home</a>
+    </nav>
+</header>
+
+<section class="map-grid">
+    <div class="map-panel">
+        <div id="map" class="map-canvas"></div>
+    </div>
+    <aside class="map-sidebar">
+        <div class="insight-card" id="map-summary"></div>
+        <div class="insight-card">
+            <h3>Heat Risk Legend</h3>
+            <div id="map-legend"></div>
+        </div>
+        <div class="insight-card" id="file-input-container"></div>
+        <div class="insight-card">
+            <h3>Top Hottest Wards</h3>
+            <ul class="top-ward-list" id="top-wards"></ul>
+        </div>
+        <div class="insight-card">
+            <h3>Selected Ward</h3>
+            <div id="selected-ward">
+                <p>Click a ward polygon on the map to see details here.</p>
+            </div>
+        </div>
+    </aside>
+</section>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="js/ward-data.js"></script>
+<script src="js/map-controller.js"></script>
+</body>
+</html>

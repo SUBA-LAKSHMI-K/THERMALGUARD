@@ -1,0 +1,217 @@
+{
+  "title": "5-Year Heat Risk Forecast",
+  "criticalZonesAnalyzed": 5,
+  "citywideForecast": {
+    "2026": {
+      "avgRiskScore": 71,
+      "status": "Baseline"
+    },
+    "2028": {
+      "avgRiskScore": 63,
+      "status": "Improving with current interventions"
+    },
+    "2030": {
+      "avgRiskScore": 56,
+      "status": "Significant improvement if funding sustained"
+    }
+  },
+  "zoneForecasts": {
+    "Zone 9 Teynampet": {
+      "current": {
+        "riskScore": 88,
+        "temperature": 40.6,
+        "ndvi": 0.15
+      },
+      "forecast2030": {
+        "2027": {
+          "riskScore": 81,
+          "temperature": "40.2",
+          "ndvi": "0.180"
+        },
+        "2028": {
+          "riskScore": 76.53999999999999,
+          "temperature": "39.8",
+          "ndvi": "0.210"
+        },
+        "2030": {
+          "riskScore": 72.06,
+          "temperature": "39.1",
+          "ndvi": "0.250",
+          "riskReclassification": "Projected to downgrade from Critical to High"
+        }
+      },
+      "treeImpactSimulation": {
+        "currentTrees": 6800,
+        "projectedTrees2030": 21800,
+        "ndviImprovement": "+0.08-0.12",
+        "tempReduction": "-1.0-1.5°C",
+        "timeline": "3-5 years for mature canopy"
+      },
+      "coolRoofImpact": {
+        "currentCovered": 1540,
+        "targetCoverage2030": 42750,
+        "perHouseTempReduction": "3-4°C",
+        "communityAvg": "-1.5-2.0°C",
+        "paybackPeriod": "5-7 years (energy savings)"
+      }
+    },
+    "Zone 4 Tondiarpet": {
+      "current": {
+        "riskScore": 85,
+        "temperature": 40.1,
+        "ndvi": 0.14
+      },
+      "forecast2030": {
+        "2027": {
+          "riskScore": 78.5,
+          "temperature": "39.7",
+          "ndvi": "0.170"
+        },
+        "2028": {
+          "riskScore": 74.38,
+          "temperature": "39.3",
+          "ndvi": "0.200"
+        },
+        "2030": {
+          "riskScore": 70.32,
+          "temperature": "38.6",
+          "ndvi": "0.240",
+          "riskReclassification": "Projected to downgrade from Critical to High"
+        }
+      },
+      "treeImpactSimulation": {
+        "currentTrees": 5600,
+        "projectedTrees2030": 20600,
+        "ndviImprovement": "+0.08-0.12",
+        "tempReduction": "-1.0-1.5°C",
+        "timeline": "3-5 years for mature canopy"
+      },
+      "coolRoofImpact": {
+        "currentCovered": 900,
+        "targetCoverage2030": 49350,
+        "perHouseTempReduction": "3-4°C",
+        "communityAvg": "-1.5-2.0°C",
+        "paybackPeriod": "5-7 years (energy savings)"
+      }
+    },
+    "Zone 5 Royapuram": {
+      "current": {
+        "riskScore": 89,
+        "temperature": 41,
+        "ndvi": 0.12
+      },
+      "forecast2030": {
+        "2027": {
+          "riskScore": 83,
+          "temperature": "40.6",
+          "ndvi": "0.150"
+        },
+        "2028": {
+          "riskScore": 78.66,
+          "temperature": "40.2",
+          "ndvi": "0.180"
+        },
+        "2030": {
+          "riskScore": 74.74,
+          "temperature": "39.5",
+          "ndvi": "0.220",
+          "riskReclassification": "Projected to downgrade from Critical to High"
+        }
+      },
+      "treeImpactSimulation": {
+        "currentTrees": 0,
+        "projectedTrees2030": 15000,
+        "ndviImprovement": "+0.08-0.12",
+        "tempReduction": "-1.0-1.5°C",
+        "timeline": "3-5 years for mature canopy"
+      },
+      "coolRoofImpact": {
+        "currentCovered": 1320,
+        "targetCoverage2030": 44700,
+        "perHouseTempReduction": "3-4°C",
+        "communityAvg": "-1.5-2.0°C",
+        "paybackPeriod": "5-7 years (energy savings)"
+      }
+    },
+    "Zone 6 Thiru. Vi. Ka. Nagar": {
+      "current": {
+        "riskScore": 87,
+        "temperature": 40.8,
+        "ndvi": 0.13
+      },
+      "forecast2030": {
+        "2027": {
+          "riskScore": 80.5,
+          "temperature": "40.4",
+          "ndvi": "0.160"
+        },
+        "2028": {
+          "riskScore": 76.22,
+          "temperature": "40.0",
+          "ndvi": "0.190"
+        },
+        "2030": {
+          "riskScore": 72.08,
+          "temperature": "39.3",
+          "ndvi": "0.230",
+          "riskReclassification": "Projected to downgrade from Critical to High"
+        }
+      },
+      "treeImpactSimulation": {
+        "currentTrees": 4400,
+        "projectedTrees2030": 19400,
+        "ndviImprovement": "+0.08-0.12",
+        "tempReduction": "-1.0-1.5°C",
+        "timeline": "3-5 years for mature canopy"
+      },
+      "coolRoofImpact": {
+        "currentCovered": 1680,
+        "targetCoverage2030": 48150,
+        "perHouseTempReduction": "3-4°C",
+        "communityAvg": "-1.5-2.0°C",
+        "paybackPeriod": "5-7 years (energy savings)"
+      }
+    },
+    "Zone 10 Kodambakkam": {
+      "current": {
+        "riskScore": 83,
+        "temperature": 39.9,
+        "ndvi": 0.18
+      },
+      "forecast2030": {
+        "2027": {
+          "riskScore": 76.5,
+          "temperature": "39.5",
+          "ndvi": "0.210"
+        },
+        "2028": {
+          "riskScore": 72.53999999999999,
+          "temperature": "39.1",
+          "ndvi": "0.240"
+        },
+        "2030": {
+          "riskScore": 68.56,
+          "temperature": "38.4",
+          "ndvi": "0.280",
+          "riskReclassification": "Projected to downgrade from Critical to High"
+        }
+      },
+      "treeImpactSimulation": {
+        "currentTrees": 0,
+        "projectedTrees2030": 15000,
+        "ndviImprovement": "+0.08-0.12",
+        "tempReduction": "-1.0-1.5°C",
+        "timeline": "3-5 years for mature canopy"
+      },
+      "coolRoofImpact": {
+        "currentCovered": 980,
+        "targetCoverage2030": 46800,
+        "perHouseTempReduction": "3-4°C",
+        "communityAvg": "-1.5-2.0°C",
+        "paybackPeriod": "5-7 years (energy savings)"
+      }
+    }
+  },
+  "confidence": "Medium-High (based on current intervention trajectory)",
+  "keyInsight": "With current interventions at 80% capacity, critical zones can be downgraded to High risk by 2030"
+}

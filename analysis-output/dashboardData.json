@@ -1,0 +1,194 @@
+{
+  "title": "Interactive Dashboard Data",
+  "overview": {
+    "totalPopulation": 4178000,
+    "criticalZones": 5,
+    "averageRiskScore": 69.6,
+    "activeProgramsCount": 52
+  },
+  "zoneRanking": [
+    {
+      "name": "Zone 5 Royapuram",
+      "risk": 89,
+      "temp": 41,
+      "ndvi": 0.12,
+      "population": 298000,
+      "interventions": 4
+    },
+    {
+      "name": "Zone 9 Teynampet",
+      "risk": 88,
+      "temp": 40.6,
+      "ndvi": 0.15,
+      "population": 285000,
+      "interventions": 6
+    },
+    {
+      "name": "Zone 6 Thiru. Vi. Ka. Nagar",
+      "risk": 87,
+      "temp": 40.8,
+      "ndvi": 0.13,
+      "population": 321000,
+      "interventions": 5
+    },
+    {
+      "name": "Zone 4 Tondiarpet",
+      "risk": 85,
+      "temp": 40.1,
+      "ndvi": 0.14,
+      "population": 329000,
+      "interventions": 5
+    },
+    {
+      "name": "Zone 10 Kodambakkam",
+      "risk": 83,
+      "temp": 39.9,
+      "ndvi": 0.18,
+      "population": 312000,
+      "interventions": 5
+    },
+    {
+      "name": "Zone 1 Tiruvottiyur",
+      "risk": 76,
+      "temp": 39.2,
+      "ndvi": 0.26,
+      "population": 264000,
+      "interventions": 3
+    },
+    {
+      "name": "Zone 14 Perungudi",
+      "risk": 74,
+      "temp": 38.8,
+      "ndvi": 0.27,
+      "population": 198000,
+      "interventions": 3
+    },
+    {
+      "name": "Zone 15 Sholinganallur",
+      "risk": 72,
+      "temp": 38.4,
+      "ndvi": 0.31,
+      "population": 312000,
+      "interventions": 5
+    },
+    {
+      "name": "Zone 7 Ambattur",
+      "risk": 70,
+      "temp": 38.1,
+      "ndvi": 0.33,
+      "population": 412000,
+      "interventions": 5
+    },
+    {
+      "name": "Zone 12 Alandur",
+      "risk": 62,
+      "temp": 37.4,
+      "ndvi": 0.3,
+      "population": 268000,
+      "interventions": 3
+    },
+    {
+      "name": "Zone 8 Anna Nagar",
+      "risk": 60,
+      "temp": 37.1,
+      "ndvi": 0.35,
+      "population": 295000,
+      "interventions": 3
+    },
+    {
+      "name": "Zone 13 Adyar",
+      "risk": 58,
+      "temp": 36.7,
+      "ndvi": 0.38,
+      "population": 241000,
+      "interventions": 4
+    },
+    {
+      "name": "Zone 3 Madhavaram",
+      "risk": 54,
+      "temp": 36.4,
+      "ndvi": 0.42,
+      "population": 287000,
+      "interventions": 3
+    },
+    {
+      "name": "Zone 11 Valasaravakkam",
+      "risk": 42,
+      "temp": 35.2,
+      "ndvi": 0.48,
+      "population": 356000,
+      "interventions": 2
+    }
+  ],
+  "timeseries": {
+    "cityAvgTemp": [
+      {
+        "month": "Jan",
+        "temp": 28.2,
+        "year": 2024
+      },
+      {
+        "month": "Apr",
+        "temp": 36.5,
+        "year": 2024
+      },
+      {
+        "month": "May",
+        "temp": 39.2,
+        "year": 2024
+      },
+      {
+        "month": "Apr",
+        "temp": 37.1,
+        "year": 2025
+      },
+      {
+        "month": "Apr",
+        "temp": 36.8,
+        "year": 2026
+      }
+    ],
+    "riskScoreTrend": [
+      {
+        "year": 2023,
+        "score": 72
+      },
+      {
+        "year": 2024,
+        "score": 70
+      },
+      {
+        "year": 2025,
+        "score": 68
+      },
+      {
+        "year": 2026,
+        "score": 65
+      }
+    ]
+  },
+  "comparativeMetrics": {
+    "bestPerforming": {
+      "zone": "Zone 11 Valasaravakkam",
+      "riskScore": 42,
+      "ndvi": 0.48,
+      "temp": 35.2
+    },
+    "worstPerforming": {
+      "zone": "Zone 5 Royapuram",
+      "riskScore": 89,
+      "ndvi": 0.12,
+      "temp": 41
+    },
+    "gap": {
+      "riskDifference": 47,
+      "tempDifference": 5.799999999999997
+    }
+  },
+  "mapLayers": {
+    "heatRisk": "Critical zones highlighted",
+    "vegetation": "NDVI overlay",
+    "interventions": "Active program locations",
+    "vulnerability": "Population density + demographics"
+  }
+}

@@ -1,0 +1,527 @@
+{
+  "title": "Zone-by-Zone Analysis Reports",
+  "reportCount": 14,
+  "reports": {
+    "Zone 15 Sholinganallur": {
+      "riskProfile": {
+        "level": "High",
+        "score": 72,
+        "temperature": "38.4°C",
+        "days40plus": "34 days/year",
+        "vulnerablePopulation": 56160
+      },
+      "environmentalStatus": {
+        "vegetation": {
+          "ndvi": 0.31,
+          "trend": "declining",
+          "action": "⚠️ Urgent greening needed"
+        },
+        "impervious": {
+          "pct": 58,
+          "assessment": "Moderate"
+        }
+      },
+      "interventions": {
+        "active": 5,
+        "budget": "₹1.3 cr",
+        "topNGOs": [
+          "Green Chennai Initiative",
+          "ThermalGuard Foundation",
+          "Climate Aware Tamil Nadu"
+        ],
+        "impactScore": 68
+      },
+      "priorities": [],
+      "fundingRecommendation": "₹31.2 crore (FY 2026-27)"
+    },
+    "Zone 14 Perungudi": {
+      "riskProfile": {
+        "level": "High",
+        "score": 74,
+        "temperature": "38.8°C",
+        "days40plus": "37 days/year",
+        "vulnerablePopulation": 36630
+      },
+      "environmentalStatus": {
+        "vegetation": {
+          "ndvi": 0.27,
+          "trend": "declining",
+          "action": "⚠️ Urgent greening needed"
+        },
+        "impervious": {
+          "pct": 62,
+          "assessment": "Moderate"
+        }
+      },
+      "interventions": {
+        "active": 3,
+        "budget": "₹0.8 cr",
+        "topNGOs": [
+          "WetlandWatch Chennai",
+          "ThermalGuard Foundation"
+        ],
+        "impactScore": 61
+      },
+      "priorities": [
+        {
+          "level": 3,
+          "action": "Mass tree planting campaign"
+        }
+      ],
+      "fundingRecommendation": "₹19.8 crore (FY 2026-27)"
+    },
+    "Zone 9 Teynampet": {
+      "riskProfile": {
+        "level": "Critical",
+        "score": 88,
+        "temperature": "40.6°C",
+        "days40plus": "52 days/year",
+        "vulnerablePopulation": 94050
+      },
+      "environmentalStatus": {
+        "vegetation": {
+          "ndvi": 0.15,
+          "trend": "stable_low",
+          "action": "✅ Stable"
+        },
+        "impervious": {
+          "pct": 81,
+          "assessment": "Critical"
+        }
+      },
+      "interventions": {
+        "active": 6,
+        "budget": "₹2.0 cr",
+        "topNGOs": [
+          "Urban Green Chennai",
+          "ThermalGuard Foundation",
+          "WaterWise Chennai"
+        ],
+        "impactScore": 75
+      },
+      "priorities": [
+        {
+          "level": 1,
+          "action": "Establish emergency cooling centers"
+        },
+        {
+          "level": 2,
+          "action": "Fast-track cool roof program"
+        },
+        {
+          "level": 3,
+          "action": "Mass tree planting campaign"
+        }
+      ],
+      "fundingRecommendation": "₹42.8 crore (FY 2026-27)"
+    },
+    "Zone 13 Adyar": {
+      "riskProfile": {
+        "level": "Moderate",
+        "score": 58,
+        "temperature": "36.7°C",
+        "days40plus": "26 days/year",
+        "vulnerablePopulation": 34945
+      },
+      "environmentalStatus": {
+        "vegetation": {
+          "ndvi": 0.38,
+          "trend": "stable",
+          "action": "✅ Stable"
+        },
+        "impervious": {
+          "pct": 64,
+          "assessment": "Moderate"
+        }
+      },
+      "interventions": {
+        "active": 4,
+        "budget": "₹0.9 cr",
+        "topNGOs": [
+          "Adyar Poonga Trust",
+          "Green Chennai Initiative"
+        ],
+        "impactScore": 79
+      },
+      "priorities": [],
+      "fundingRecommendation": "₹12.1 crore (FY 2026-27)"
+    },
+    "Zone 4 Tondiarpet": {
+      "riskProfile": {
+        "level": "Critical",
+        "score": 85,
+        "temperature": "40.1°C",
+        "days40plus": "48 days/year",
+        "vulnerablePopulation": 104869
+      },
+      "environmentalStatus": {
+        "vegetation": {
+          "ndvi": 0.14,
+          "trend": "declining",
+          "action": "⚠️ Urgent greening needed"
+        },
+        "impervious": {
+          "pct": 79,
+          "assessment": "Critical"
+        }
+      },
+      "interventions": {
+        "active": 5,
+        "budget": "₹1.6 cr",
+        "topNGOs": [
+          "ThermalGuard Foundation",
+          "PollutionFree Chennai",
+          "Climate Aware Tamil Nadu"
+        ],
+        "impactScore": 63
+      },
+      "priorities": [
+        {
+          "level": 1,
+          "action": "Establish emergency cooling centers"
+        },
+        {
+          "level": 2,
+          "action": "Fast-track cool roof program"
+        },
+        {
+          "level": 3,
+          "action": "Mass tree planting campaign"
+        }
+      ],
+      "fundingRecommendation": "₹49.4 crore (FY 2026-27)"
+    },
+    "Zone 5 Royapuram": {
+      "riskProfile": {
+        "level": "Critical",
+        "score": 89,
+        "temperature": "41°C",
+        "days40plus": "55 days/year",
+        "vulnerablePopulation": 99458
+      },
+      "environmentalStatus": {
+        "vegetation": {
+          "ndvi": 0.12,
+          "trend": "declining",
+          "action": "⚠️ Urgent greening needed"
+        },
+        "impervious": {
+          "pct": 85,
+          "assessment": "Critical"
+        }
+      },
+      "interventions": {
+        "active": 4,
+        "budget": "₹1.4 cr",
+        "topNGOs": [
+          "ThermalGuard Foundation",
+          "Urban Green Chennai"
+        ],
+        "impactScore": 55
+      },
+      "priorities": [
+        {
+          "level": 1,
+          "action": "Establish emergency cooling centers"
+        },
+        {
+          "level": 2,
+          "action": "Fast-track cool roof program"
+        },
+        {
+          "level": 3,
+          "action": "Mass tree planting campaign"
+        }
+      ],
+      "fundingRecommendation": "₹44.7 crore (FY 2026-27)"
+    },
+    "Zone 1 Tiruvottiyur": {
+      "riskProfile": {
+        "level": "High",
+        "score": 76,
+        "temperature": "39.2°C",
+        "days40plus": "41 days/year",
+        "vulnerablePopulation": 50160
+      },
+      "environmentalStatus": {
+        "vegetation": {
+          "ndvi": 0.26,
+          "trend": "declining",
+          "action": "⚠️ Urgent greening needed"
+        },
+        "impervious": {
+          "pct": 67,
+          "assessment": "Moderate"
+        }
+      },
+      "interventions": {
+        "active": 3,
+        "budget": "₹1.1 cr",
+        "topNGOs": [
+          "CoastalGuard India",
+          "PollutionFree Chennai"
+        ],
+        "impactScore": 58
+      },
+      "priorities": [],
+      "fundingRecommendation": "₹26.4 crore (FY 2026-27)"
+    },
+    "Zone 3 Madhavaram": {
+      "riskProfile": {
+        "level": "Moderate",
+        "score": 54,
+        "temperature": "36.4°C",
+        "days40plus": "22 days/year",
+        "vulnerablePopulation": 38745
+      },
+      "environmentalStatus": {
+        "vegetation": {
+          "ndvi": 0.42,
+          "trend": "stable",
+          "action": "✅ Stable"
+        },
+        "impervious": {
+          "pct": 49,
+          "assessment": "Moderate"
+        }
+      },
+      "interventions": {
+        "active": 3,
+        "budget": "₹0.7 cr",
+        "topNGOs": [
+          "Green Chennai Initiative"
+        ],
+        "impactScore": 71
+      },
+      "priorities": [
+        {
+          "level": 4,
+          "action": "Attract additional NGO partnerships"
+        }
+      ],
+      "fundingRecommendation": "₹14.4 crore (FY 2026-27)"
+    },
+    "Zone 6 Thiru. Vi. Ka. Nagar": {
+      "riskProfile": {
+        "level": "Critical",
+        "score": 87,
+        "temperature": "40.8°C",
+        "days40plus": "51 days/year",
+        "vulnerablePopulation": 104726
+      },
+      "environmentalStatus": {
+        "vegetation": {
+          "ndvi": 0.13,
+          "trend": "declining",
+          "action": "⚠️ Urgent greening needed"
+        },
+        "impervious": {
+          "pct": 83,
+          "assessment": "Critical"
+        }
+      },
+      "interventions": {
+        "active": 5,
+        "budget": "₹1.6 cr",
+        "topNGOs": [
+          "ThermalGuard Foundation",
+          "Urban Green Chennai",
+          "WaterWise Chennai"
+        ],
+        "impactScore": 66
+      },
+      "priorities": [
+        {
+          "level": 1,
+          "action": "Establish emergency cooling centers"
+        },
+        {
+          "level": 2,
+          "action": "Fast-track cool roof program"
+        },
+        {
+          "level": 3,
+          "action": "Mass tree planting campaign"
+        }
+      ],
+      "fundingRecommendation": "₹48.1 crore (FY 2026-27)"
+    },
+    "Zone 8 Anna Nagar": {
+      "riskProfile": {
+        "level": "Moderate",
+        "score": 60,
+        "temperature": "37.1°C",
+        "days40plus": "28 days/year",
+        "vulnerablePopulation": 44250
+      },
+      "environmentalStatus": {
+        "vegetation": {
+          "ndvi": 0.35,
+          "trend": "stable",
+          "action": "✅ Stable"
+        },
+        "impervious": {
+          "pct": 69,
+          "assessment": "Moderate"
+        }
+      },
+      "interventions": {
+        "active": 3,
+        "budget": "₹0.9 cr",
+        "topNGOs": [
+          "Urban Green Chennai",
+          "Climate Aware Tamil Nadu"
+        ],
+        "impactScore": 74
+      },
+      "priorities": [],
+      "fundingRecommendation": "₹29.5 crore (FY 2026-27)"
+    },
+    "Zone 7 Ambattur": {
+      "riskProfile": {
+        "level": "High",
+        "score": 70,
+        "temperature": "38.1°C",
+        "days40plus": "31 days/year",
+        "vulnerablePopulation": 72100
+      },
+      "environmentalStatus": {
+        "vegetation": {
+          "ndvi": 0.33,
+          "trend": "declining",
+          "action": "⚠️ Urgent greening needed"
+        },
+        "impervious": {
+          "pct": 61,
+          "assessment": "Moderate"
+        }
+      },
+      "interventions": {
+        "active": 5,
+        "budget": "₹1.4 cr",
+        "topNGOs": [
+          "PollutionFree Chennai",
+          "WetlandWatch Chennai",
+          "Green Chennai Initiative"
+        ],
+        "impactScore": 69
+      },
+      "priorities": [],
+      "fundingRecommendation": "₹41.2 crore (FY 2026-27)"
+    },
+    "Zone 10 Kodambakkam": {
+      "riskProfile": {
+        "level": "Critical",
+        "score": 83,
+        "temperature": "39.9°C",
+        "days40plus": "46 days/year",
+        "vulnerablePopulation": 97110
+      },
+      "environmentalStatus": {
+        "vegetation": {
+          "ndvi": 0.18,
+          "trend": "declining",
+          "action": "⚠️ Urgent greening needed"
+        },
+        "impervious": {
+          "pct": 78,
+          "assessment": "Critical"
+        }
+      },
+      "interventions": {
+        "active": 5,
+        "budget": "₹1.5 cr",
+        "topNGOs": [
+          "ThermalGuard Foundation",
+          "Climate Aware Tamil Nadu",
+          "Urban Green Chennai"
+        ],
+        "impactScore": 64
+      },
+      "priorities": [
+        {
+          "level": 1,
+          "action": "Establish emergency cooling centers"
+        },
+        {
+          "level": 2,
+          "action": "Fast-track cool roof program"
+        },
+        {
+          "level": 3,
+          "action": "Mass tree planting campaign"
+        }
+      ],
+      "fundingRecommendation": "₹46.8 crore (FY 2026-27)"
+    },
+    "Zone 12 Alandur": {
+      "riskProfile": {
+        "level": "Moderate",
+        "score": 62,
+        "temperature": "37.4°C",
+        "days40plus": "29 days/year",
+        "vulnerablePopulation": 41540
+      },
+      "environmentalStatus": {
+        "vegetation": {
+          "ndvi": 0.3,
+          "trend": "stable",
+          "action": "✅ Stable"
+        },
+        "impervious": {
+          "pct": 66,
+          "assessment": "Moderate"
+        }
+      },
+      "interventions": {
+        "active": 3,
+        "budget": "₹0.9 cr",
+        "topNGOs": [
+          "Urban Green Chennai",
+          "Green Chennai Initiative"
+        ],
+        "impactScore": 70
+      },
+      "priorities": [],
+      "fundingRecommendation": "₹26.8 crore (FY 2026-27)"
+    },
+    "Zone 11 Valasaravakkam": {
+      "riskProfile": {
+        "level": "Low",
+        "score": 42,
+        "temperature": "35.2°C",
+        "days40plus": "14 days/year",
+        "vulnerablePopulation": 37380
+      },
+      "environmentalStatus": {
+        "vegetation": {
+          "ndvi": 0.48,
+          "trend": "improving",
+          "action": "✅ Stable"
+        },
+        "impervious": {
+          "pct": 44,
+          "assessment": "Moderate"
+        }
+      },
+      "interventions": {
+        "active": 2,
+        "budget": "₹0.6 cr",
+        "topNGOs": [
+          "WetlandWatch Chennai",
+          "Green Chennai Initiative"
+        ],
+        "impactScore": 83
+      },
+      "priorities": [],
+      "fundingRecommendation": "₹17.8 crore (FY 2026-27)"
+    }
+  },
+  "executiveSummary": {
+    "criticalZonesRequiringUrgentAction": 5,
+    "totalCurrentBudgetAllocation": "₹17 cr",
+    "recommendedAdditionalFunding": "₹8 cr",
+    "mostAffectedPopulation": 1253400,
+    "keyRecommendation": "Coordinate cool roof + tree planting + water body restoration"
+  }
+}

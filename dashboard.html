@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Dashboard - ThermalGuard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="header-left">
+      <a class="back-link" href="index.html">⬅ Back</a>
+      <div>
+        <h1>AI Dashboard</h1>
+        <p>Heat risk analytics and ward priority insights.</p>
+      </div>
+    </div>
+    <nav class="page-nav">
+      <a href="interactive-map.html">Interactive Map</a>
+      <a href="mobile-report.html">Mobile Report</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <section class="dashboard-summary">
+    <h2>Dashboard Overview</h2>
+    <p>Data-driven insights for Chennai heat mitigation planning.</p>
+    <div class="summary-cards" id="summary-cards"></div>
+  </section>
+
+  <section class="rankings">
+    <h2>Priority Wards</h2>
+    <div class="rankings-table" id="ward-rankings"></div>
+  </section>
+
+  <script src="js/dashboard-controller.js"></script>
+</body>
+</html>

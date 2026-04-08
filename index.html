@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThermalGuard - Urban Heat Intelligence Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="logo">
+            <h2>🔥 ThermalGuard</h2>
+        </div>
+        <div class="nav-links">
+            <a href="map.html">Heat Map</a>
+            <a href="ward-data.html">Ward Data</a>
+            <a href="ngo.html">NGO Portal</a>
+            <a href="simulation.html">Simulation</a>
+            <a href="chatbot.html">AI Assistant</a>
+        </div>
+        <div class="nav-actions">
+            <button class="btn-secondary">Login</button>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Real-Time Urban Heat Intelligence</h1>
+        <p>Monitor • Analyze • Simulate • Mitigate</p>
+        <div class="hero-buttons">
+            <button class="btn-primary" onclick="goTo('chatbot.html')">Talk to AI Assistant</button>
+            <button class="btn-secondary" onclick="goTo('map.html')">Explore Heat Map</button>
+        </div>
+    </div>
+    <div class="hero-stats">
+        <div class="stat-item">
+            <h3>45+</h3>
+            <p>Wards Monitored</p>
+        </div>
+        <div class="stat-item">
+            <h3>Real-Time</h3>
+            <p>Heat Index Data</p>
+        </div>
+        <div class="stat-item">
+            <h3>100+</h3>
+            <p>Intervention Programs</p>
+        </div>
+    </div>
+</section>
+
+<section class="dashboard-summary">
+    <h2>City Heat Snapshot</h2>
+    <p>ThermalGuard combines ward boundaries, vegetation data, and intervention records into one decision-support view.</p>
+    <div class="summary-cards">
+        <div class="metric-card">
+            <div class="metric-label">Current Risk Score</div>
+            <div class="metric-value">71/100</div>
+            <div class="metric-note">City-wide heat risk baseline</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-label">Critical Zones</div>
+            <div class="metric-value">5</div>
+            <div class="metric-note">Immediate intervention required</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-label">Active Programs</div>
+            <div class="metric-value">30+</div>
+            <div class="metric-note">NGO and civic initiatives live</div>
+        </div>
+    </div>
+</section>
+
+<section class="risk-scale">
+    <h2>Understanding Thermal Risk</h2>
+    <p>Each ward is scored by temperature, vegetation stress, and built-up intensity.</p>
+    <div class="scale-container">
+        <div class="scale-item moderate">
+            <h4>LOW</h4>
+            <p class="range">0-50</p>
+            <p>Manageable heat conditions.</p>
+        </div>
+        <div class="scale-item high">
+            <h4>MEDIUM</h4>
+            <p class="range">51-70</p>
+            <p>Watch zones and target quick mitigation.</p>
+        </div>
+        <div class="scale-item severe">
+            <h4>HIGH</h4>
+            <p class="range">71+</p>
+            <p>Urgent intervention and funding required.</p>
+        </div>
+    </div>
+</section>
+
+<section class="features" id="about">
+    <h2>Core Modules</h2>
+    <div class="features-grid">
+        <div class="feature-card" onclick="goTo('map.html')">
+            <div class="feature-icon"></div>
+            <h2>Heat Map</h2>
+            <p>View ward boundaries and heat severity levels.</p>
+            <a href="map.html" class="link-arrow">Open Map →</a>
+        </div>
+
+        <div class="feature-card" onclick="goTo('ward-data.html')">
+            <div class="feature-icon"></div>
+            <h2>Ward Data</h2>
+            <p>Inspect ward-level risk indicators and attributes.</p>
+            <a href="ward-data.html" class="link-arrow">View Data →</a>
+        </div>
+
+        <div class="feature-card" onclick="goTo('simulation.html')">
+            <div class="feature-icon"></div>
+            <h2>Simulation</h2>
+            <p>Test tree cover and cool roof impact quickly.</p>
+            <a href="simulation.html" class="link-arrow">Run Simulation →</a>
+        </div>
+
+        <div class="feature-card" onclick="goTo('ngo.html')">
+            <div class="feature-icon"></div>
+            <h2>NGO Portal</h2>
+            <p>Track intervention actions and implementation progress.</p>
+            <a href="ngo.html" class="link-arrow">Open Portal →</a>
+        </div>
+
+        <div class="feature-card" onclick="goTo('chatbot.html')">
+            <div class="feature-icon"></div>
+            <h2>AI Assistant</h2>
+            <p>Ask natural-language questions for planning and decisions.</p>
+            <a href="chatbot.html" class="link-arrow">Chat Now →</a>
+        </div>
+    </div>
+</section>
+
+<section class="trending">
+    <h2>Trending Insights</h2>
+    <div class="trending-content">
+        <div class="trending-item">
+            <h3>🔴 Heat Priority</h3>
+            <p>Critical and high-risk wards are concentrated in dense built-up pockets.</p>
+            <a href="map.html">View Map →</a>
+        </div>
+        <div class="trending-item">
+            <h3>🌳 Mitigation Impact</h3>
+            <p>Combined tree cover and cool roofs produce better risk reduction than single actions.</p>
+            <a href="simulation.html">Run Scenario →</a>
+        </div>
+        <div class="trending-item">
+            <h3>🤝 NGO Action</h3>
+            <p>Ward-level NGO tracking helps prioritize funding where implementation gaps remain.</p>
+            <a href="ngo.html">Open NGO Portal →</a>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Plan Cooler Chennai Wards</h2>
+    <p>Use data, simulations, and interventions to reduce urban heat risk.</p>
+    <div class="cta-buttons">
+        <button class="btn-primary" onclick="goTo('chatbot.html')">Start with AI Assistant</button>
+        <button class="btn-secondary" onclick="goTo('map.html')">Open Heat Map</button>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>ThermalGuard</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chatbot.html">AI Assistant</a></li>
+                <li><a href="ngo.html">NGO Portal</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Tools</h3>
+            <ul>
+                <li><a href="map.html">Heat Map</a></li>
+                <li><a href="ward-data.html">Ward Data</a></li>
+                <li><a href="simulation.html">Simulation</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 ThermalGuard | Real-time Urban Heat Intelligence Platform</p>
+    </div>
+</footer>
+
+<script>
+function goTo(page) {
+    window.location.href = page;
+}
+</script>
+
+</body>
+</html>

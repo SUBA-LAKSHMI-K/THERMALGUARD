@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ward Data Insights</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="header-left">
+            <a class="back-link" href="index.html">⬅ Back</a>
+            <div>
+                <h1>Ward Data Insights</h1>
+                <p>Explore Chennai ward heat risk, distribution and key metrics.</p>
+            </div>
+        </div>
+        <nav class="page-nav">
+            <a href="map.html">Thermal Map</a>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <section class="data-grid">
+        <main class="data-panel">
+            <div class="summary-row" id="summary-cards"></div>
+
+            <div class="table-card">
+                <div class="card-header">
+                    <div>
+                        <h2>Ward Heat Ranking</h2>
+                        <p>Sorted by the highest thermal risk score.</p>
+                    </div>
+                </div>
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Ward Name</th>
+                                <th>Heat Score</th>
+                                <th>Risk Level</th>
+                                <th>NDVI</th>
+                                <th>Population</th>
+                                <th>Programs</th>
+                                <th>NGOs</th>
+                                <th>Gov Priority</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ward-table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <aside class="info-panel">
+            <div class="insight-card">
+                <h3>Risk Distribution</h3>
+                <div id="distribution-list"></div>
+            </div>
+            <div class="insight-card" id="file-input-container"></div>
+            <div class="insight-card">
+                <h3>Selected Ward</h3>
+                <div id="selected-ward-card">
+                    <p>Select a ward from the table to view more details.</p>
+                </div>
+            </div>
+            <div class="insight-card">
+                <h3>Usage Note</h3>
+                <p>If the GeoJSON file does not contain thermal metrics, the display uses a stable ward-based risk estimate for demonstration.</p>
+            </div>
+        </aside>
+    </section>
+
+    <script src="js/ward-data.js"></script>
+    <script src="js/ward-insights.js"></script>
+</body>
+</html>

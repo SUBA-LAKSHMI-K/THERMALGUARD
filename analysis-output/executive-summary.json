@@ -1,0 +1,75 @@
+{
+  "title": "ThermalGuard Executive Summary",
+  "generatedDate": "2026-04-08T13:18:42.978Z",
+  "keyFindings": [
+    "5 critical zones require immediate intervention (Zones 5, 9, 4, 6, 10)",
+    "2.5+ million people exposed to heat stress",
+    "With current interventions: 2°C reduction by 2027",
+    "With scaled interventions: 4-5°C reduction by 2030",
+    "Cool roofs offer fastest ROI (5-7 years payback)",
+    "Trees provide long-term cooling + co-benefits",
+    "Combined approach is 2x more effective than single strategy"
+  ],
+  "recommendations": [
+    {
+      "priority": 1,
+      "action": "Emergency cool roof fast-track for Zones 5 & 9",
+      "investment": "₹75 crore",
+      "timeline": "6 months",
+      "impact": "2-3°C community-level reduction"
+    },
+    {
+      "priority": 2,
+      "action": "Mass tree planting (20,000 trees/year)",
+      "investment": "₹45 crore",
+      "timeline": "12 months",
+      "impact": "1-1.5°C community reduction (by year 3)"
+    },
+    {
+      "priority": 3,
+      "action": "Wetland restoration (15 water bodies)",
+      "investment": "₹25 crore",
+      "timeline": "18 months",
+      "impact": "0.5-1°C + biodiversity benefits"
+    },
+    {
+      "priority": 4,
+      "action": "Establish 25-30 cooling centers in critical zones",
+      "investment": "₹15 crore",
+      "timeline": "3 months",
+      "impact": "Immediate lifesaving capability"
+    }
+  ],
+  "budgetAllocation": {
+    "total": "₹160 crore (FY 2026-27 + FY 2027-28)",
+    "coolRoofs": "₹56 crore (35%)",
+    "treePlanting": "₹48 crore (30%)",
+    "waterBodies": "₹32 crore (20%)",
+    "awareness": "₹24 crore (15%)"
+  },
+  "expectedOutcomes": {
+    "timeframe": "2030",
+    "citywideTempReduction": "-3 to -4°C",
+    "criticalZonesDowngraded": "3-4 zones (to High risk)",
+    "heatDeathsPrevented": "300-500 per year",
+    "energySavingsAnnual": "₹150+ crore",
+    "jobsCreated": "5,000+",
+    "treesPlanted": "100,000+",
+    "populationBenefited": "3.5+ million"
+  },
+  "riskIfUnacted": {
+    "scenario": "Business as usual (no intervention scale-up)",
+    "temperature": "+0.5-1.0°C worsening",
+    "mortalityRisk": "10,000+ deaths by 2030",
+    "economicLoss": "₹5,000+ crore/year",
+    "urbanMigration": "2-3 million climate refugees"
+  },
+  "nextSteps": [
+    "Cabinet approval for ₹160 crore emergency intervention fund",
+    "Establish inter-agency task force (next 7 days)",
+    "Launch rapid cool roof tender (within 30 days)",
+    "Activate tree planting vendor network (within 45 days)",
+    "Deploy cooling centers (within 60 days)",
+    "Monthly progress reviews + adaptive management"
+  ]
+}

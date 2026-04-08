@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "city": "Chennai",
+    "source": "nog.json",
+    "generated_date": "2026-04-08",
+    "description": "NGO intervention summary for the ThermalGuard portal, showing which NGOs are actively intervening in Chennai wards."
+  },
+  "ngos": [
+    {
+      "name": "ThermalGuard Foundation",
+      "specialty": "Cool Roof Programs",
+      "active_zones": ["Zone 9 Teynampet", "Zone 14 Perungudi", "Zone 15 Sholinganallur", "Zone 4 Tondiarpet", "Zone 5 Royapuram", "Zone 6 TVK Nagar", "Zone 10 Kodambakkam"],
+      "program_count": 10,
+      "total_budget_inr": 66500000,
+      "active_programs": [
+        "IT Workforce Housing Cool Roofs",
+        "SIDCO Industrial Cool Roof Pilot",
+        "High-Density Housing Cool Roof Project",
+        "North Chennai Industrial Worker Housing CRP",
+        "Kodambakkam Commercial District CRP"
+      ]
+    },
+    {
+      "name": "Urban Green Chennai",
+      "specialty": "Urban Greening",
+      "active_zones": ["Zone 9 Teynampet", "Zone 13 Adyar", "Zone 8 Anna Nagar", "Zone 10 Kodambakkam", "Zone 6 TVK Nagar", "Zone 7 Ambattur"],
+      "program_count": 6,
+      "total_budget_inr": 59200000,
+      "active_programs": [
+        "Teynampet Street Tree Corridor",
+        "Besant Nagar Beach Road Greening",
+ "Anna Nagar Tower Park Expansion",
+        "Cooum River Side Greening - North",
+        "Vertical Garden Pilot - Royapuram"
+      ]
+    },
+    {
+      "name": "Green Chennai Initiative",
+      "specialty": "Urban Greening",
+      "active_zones": ["Zone 15 Sholinganallur", "Zone 14 Perungudi", "Zone 13 Adyar"],
+      "program_count": 5,
+      "total_budget_inr": 12500000,
+      "active_programs": [
+        "OMR Tech Corridor Tree Drive",
+        "Besant Nagar Beach Road Greening"
+      ]
+    },
+    {
+      "name": "WetlandWatch Chennai",
+      "specialty": "Wetland & Water Body Restoration",
+      "active_zones": ["Zone 14 Perungudi", "Zone 11 Valasaravakkam"],
+      "program_count": 4,
+      "total_budget_inr": 26800000,
+      "active_programs": [
+        "Perungudi Wetland Restoration",
+        "Porur Lake Biodiversity Enhancement"
+      ]
+    },
+    {
+      "name": "PollutionFree Chennai",
+      "specialty": "Industrial Green Buffers",
+      "active_zones": ["Zone 4 Tondiarpet", "Zone 7 Ambattur", "Zone 1 Tiruvottiyur"],
+      "program_count": 4,
+      "total_budget_inr": 9700000,
+      "active_programs": [
+        "Tondiarpet Industrial Buffer Greening",
+        "Ambattur Industrial Estate Green Belt"
+      ]
+    },
+    {
+      "name": "Climate Aware Tamil Nadu",
+      "specialty": "Awareness Campaigns",
+      "active_zones": ["Zone 15 Sholinganallur", "Zone 14 Perungudi", "Zone 9 Teynampet", "Zone 10 Kodambakkam"],
+      "program_count": 4,
+      "total_budget_inr": 4600000,
+      "active_programs": [
+        "Heatwave Preparedness Drive",
+        "Nungambakkam-Kodambakkam Heat Literacy Drive"
+      ]
+    },
+    {
+      "name": "WaterWise Chennai",
+      "specialty": "Water Conservation",
+      "active_zones": ["Zone 9 Teynampet", "Zone 11 Valasaravakkam"],
+      "program_count": 2,
+      "total_budget_inr": 3400000,
+      "active_programs": [
+        "Rooftop Rainwater Harvesting Drive",
+        "Porur Lake Biodiversity Enhancement"
+      ]
+    },
+    {
+      "name": "CoastalGuard India",
+      "specialty": "Coastal & Mangrove Restoration",
+      "active_zones": ["Zone 1 Tiruvottiyur"],
+      "program_count": 1,
+      "total_budget_inr": 5800000,
+      "active_programs": [
+        "Ennore Creek Mangrove Restoration"
+      ]
+    },
+    {
+      "name": "Adyar Poonga Trust",
+      "specialty": "River Restoration",
+      "active_zones": ["Zone 13 Adyar"],
+      "program_count": 1,
+      "total_budget_inr": 4200000,
+      "active_programs": [
+        "Adyar River Bank Eco-Restoration"
+      ]
+    }
+  ]
+}

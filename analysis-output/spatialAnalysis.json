@@ -1,0 +1,196 @@
+{
+  "title": "Spatial Analysis & Hotspot Mapping",
+  "heatHotspots": [
+    {
+      "zone": "Zone 9 Teynampet",
+      "lat": 13.035,
+      "lng": 80.252,
+      "riskScore": 88,
+      "temperature": 40.6,
+      "population": 285000,
+      "priority": "🔴 URGENT"
+    },
+    {
+      "zone": "Zone 4 Tondiarpet",
+      "lat": 13.1178,
+      "lng": 80.29,
+      "riskScore": 85,
+      "temperature": 40.1,
+      "population": 329000,
+      "priority": "🟠 HIGH"
+    },
+    {
+      "zone": "Zone 5 Royapuram",
+      "lat": 13.112,
+      "lng": 80.2985,
+      "riskScore": 89,
+      "temperature": 41,
+      "population": 298000,
+      "priority": "🔴 URGENT"
+    },
+    {
+      "zone": "Zone 6 Thiru. Vi. Ka. Nagar",
+      "lat": 13.105,
+      "lng": 80.258,
+      "riskScore": 87,
+      "temperature": 40.8,
+      "population": 321000,
+      "priority": "🟠 HIGH"
+    },
+    {
+      "zone": "Zone 10 Kodambakkam",
+      "lat": 13.0521,
+      "lng": 80.2213,
+      "riskScore": 83,
+      "temperature": 39.9,
+      "population": 312000,
+      "priority": "🟠 HIGH"
+    }
+  ],
+  "mitigationZones": [
+    {
+      "zone": "Zone 13 Adyar",
+      "lat": 13.0012,
+      "lng": 80.2565,
+      "model": "Best Practice",
+      "ndvi": 0.38,
+      "successFactors": [
+        "Adyar Poonga Trust",
+        "Green Chennai Initiative"
+      ]
+    },
+    {
+      "zone": "Zone 3 Madhavaram",
+      "lat": 13.1497,
+      "lng": 80.2342,
+      "model": "Best Practice",
+      "ndvi": 0.42,
+      "successFactors": [
+        "Green Chennai Initiative"
+      ]
+    },
+    {
+      "zone": "Zone 8 Anna Nagar",
+      "lat": 13.085,
+      "lng": 80.21,
+      "model": "Best Practice",
+      "ndvi": 0.35,
+      "successFactors": [
+        "Urban Green Chennai",
+        "Climate Aware Tamil Nadu"
+      ]
+    },
+    {
+      "zone": "Zone 12 Alandur",
+      "lat": 13.002,
+      "lng": 80.204,
+      "model": "Best Practice",
+      "ndvi": 0.3,
+      "successFactors": [
+        "Urban Green Chennai",
+        "Green Chennai Initiative"
+      ]
+    },
+    {
+      "zone": "Zone 11 Valasaravakkam",
+      "lat": 13.049,
+      "lng": 80.1723,
+      "model": "Best Practice",
+      "ndvi": 0.48,
+      "successFactors": [
+        "WetlandWatch Chennai",
+        "Green Chennai Initiative"
+      ]
+    }
+  ],
+  "plantingOpportunities": [
+    {
+      "zone": "Zone 14 Perungudi",
+      "lat": 12.96,
+      "lng": 80.23,
+      "currentGreen": 14.5,
+      "deficit": 10.5,
+      "treesNeeded": 4540,
+      "potentialSite": "Street corridors, parks, water body edges"
+    },
+    {
+      "zone": "Zone 9 Teynampet",
+      "lat": 13.035,
+      "lng": 80.252,
+      "currentGreen": 7.3,
+      "deficit": 17.7,
+      "treesNeeded": 3060,
+      "potentialSite": "Street corridors, parks, water body edges"
+    },
+    {
+      "zone": "Zone 4 Tondiarpet",
+      "lat": 13.1178,
+      "lng": 80.29,
+      "currentGreen": 6.8,
+      "deficit": 18.2,
+      "treesNeeded": 3920,
+      "potentialSite": "Street corridors, parks, water body edges"
+    },
+    {
+      "zone": "Zone 5 Royapuram",
+      "lat": 13.112,
+      "lng": 80.2985,
+      "currentGreen": 5.2,
+      "deficit": 19.8,
+      "treesNeeded": 2960,
+      "potentialSite": "Street corridors, parks, water body edges"
+    },
+    {
+      "zone": "Zone 6 Thiru. Vi. Ka. Nagar",
+      "lat": 13.105,
+      "lng": 80.258,
+      "currentGreen": 5.8,
+      "deficit": 19.2,
+      "treesNeeded": 3420,
+      "potentialSite": "Street corridors, parks, water body edges"
+    },
+    {
+      "zone": "Zone 10 Kodambakkam",
+      "lat": 13.0521,
+      "lng": 80.2213,
+      "currentGreen": 8.9,
+      "deficit": 16.1,
+      "treesNeeded": 3340,
+      "potentialSite": "Street corridors, parks, water body edges"
+    }
+  ],
+  "coolingCenterDemand": [
+    {
+      "zone": "Zone 9 Teynampet",
+      "population": 285000,
+      "centersNeeded": 6,
+      "priority": "Immediate"
+    },
+    {
+      "zone": "Zone 4 Tondiarpet",
+      "population": 329000,
+      "centersNeeded": 7,
+      "priority": "Immediate"
+    },
+    {
+      "zone": "Zone 5 Royapuram",
+      "population": 298000,
+      "centersNeeded": 6,
+      "priority": "Immediate"
+    },
+    {
+      "zone": "Zone 6 Thiru. Vi. Ka. Nagar",
+      "population": 321000,
+      "centersNeeded": 7,
+      "priority": "Immediate"
+    },
+    {
+      "zone": "Zone 10 Kodambakkam",
+      "population": 312000,
+      "centersNeeded": 7,
+      "priority": "Immediate"
+    }
+  ],
+  "urbanHeatIslandCorridor": "Zone 5→Zone 9→Zone 6 (Northern corridor most severe)",
+  "recommendation": "Prioritize tree planting on streets connecting hotspots to milder zones"
+}

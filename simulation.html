@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simulation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<h2>📊 Simulation</h2>
+<a href="index.html">⬅ Back</a>
+
+<label>Increase Tree Cover (%):</label>
+<input type="number" id="trees"><br><br>
+
+<label>Cool Roof Adoption (%):</label>
+<input type="number" id="roofs"><br><br>
+
+<button onclick="simulate()">Run Simulation</button>
+
+<p id="result"></p>
+
+<script>
+function simulate() {
+    let trees = document.getElementById("trees").value;
+    let roofs = document.getElementById("roofs").value;
+
+    let reduction = (trees * 0.2) + (roofs * 0.3);
+
+    document.getElementById("result").innerText =
+        "Estimated Heat Reduction: " + reduction.toFixed(2) + "%";
+}
+</script>
+
+</body>
+</html>

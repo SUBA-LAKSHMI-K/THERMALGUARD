@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Portal - Intervention Programs</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="page-header">
+    <div class="header-left">
+        <a class="back-link" href="index.html">⬅ Back</a>
+        <div>
+            <h1>NGO Intervention Portal</h1>
+            <p>Track, measure, and showcase climate action impact across wards.</p>
+        </div>
+    </div>
+    <nav class="page-nav">
+        <a href="map.html">Heat Map</a>
+        <a href="index.html">Home</a>
+    </nav>
+</header>
+
+<section class="ngo-grid">
+    <!-- LEFT PANEL: Ward Risk Data & Recommendations -->
+    <div class="ngo-main">
+        <div class="ngo-card">
+            <h2>🎯 High-Risk Wards (Intervention Priority)</h2>
+            <p>Focus your resources on these wards for maximum impact.</p>
+            <div id="risk-wards-list" class="wards-list"></div>
+        </div>
+
+        <div class="ngo-card" id="ngo-file-input-container"></div>
+
+        <div class="ngo-card">
+            <h2>📊 Add Intervention Program</h2>
+            <form id="intervention-form" onsubmit="submitIntervention(event)">
+                <div class="form-group">
+                    <label for="program-ward">Select Ward</label>
+                    <select id="program-ward" required>
+                        <option value="">Choose a ward...</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="program-type">Intervention Type</label>
+                    <select id="program-type" required>
+                        <option value="">Select type...</option>
+                        <option value="tree-planting">🌳 Tree Planting</option>
+                        <option value="cool-roof">🏠 Cool Roof Installation</option>
+                        <option value="water-feature">💧 Water Features</option>
+                        <option value="ventilation">💨 Ventilation Corridor</option>
+                        <option value="awareness">📢 Community Awareness</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="program-description">Description & Details</label>
+                    <textarea id="program-description" placeholder="Details about the intervention..." rows="3"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="program-budget">Budget (₹)</label>
+                        <input type="number" id="program-budget" placeholder="0" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="program-status">Status</label>
+                        <select id="program-status" required>
+                            <option value="planned">Planned</option>
+                            <option value="in-progress">In Progress</option>
+                            <option value="completed">Completed</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="program-start">Start Date</label>
+                    <input type="date" id="program-start" required>
+                </div>
+
+                <button type="submit" class="btn-primary">Submit Intervention</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- RIGHT PANEL: Visibility & Analytics -->
+    <aside class="ngo-sidebar">
+        <div class="insight-card">
+            <h3>📈 Your Impact Dashboard</h3>
+            <div id="ngo-impact-stats"></div>
+        </div>
+
+        <div class="insight-card">
+            <h3>🤝 NGOs Currently Intervening</h3>
+            <div id="ngo-active-ngos"></div>
+            <p class="small-note">Source: ngo.json and ward intervention data.</p>
+        </div>
+
+        <div class="insight-card">
+            <h3>📍 Active Programs</h3>
+            <div id="active-programs-list"></div>
+        </div>
+
+        <div class="insight-card">
+            <h3>🏆 Showcase Your Work</h3>
+            <p>Generate proof of impact for credibility and recognition.</p>
+            <button class="btn-secondary" onclick="exportImpactReport()">📥 Export Impact Report</button>
+            <button class="btn-secondary" onclick="shareWithGovernment()">🤝 Share with Government</button>
+        </div>
+
+        <div class="insight-card">
+            <h3>💡 Strategic Insights</h3>
+            <div id="strategy-recommendations"></div>
+        </div>
+    </aside>
+</section>
+
+<section class="ngo-programs-section">
+    <h2>📋 All Active Programs</h2>
+    <div class="table-wrapper">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Ward</th>
+                    <th>Program Type</th>
+                    <th>Status</th>
+                    <th>Budget</th>
+                    <th>Est. Heat Reduction</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="programs-table-body"></tbody>
+        </table>
+    </div>
+</section>
+
+<script src="js/ward-data.js"></script>
+<script src="js/ngo-portal.js"></script>
+
+</body>
+</html>
