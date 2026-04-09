@@ -1,35 +1,301 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Simulation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThermalGuard - Simulation Dashboard</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/simulation.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <div class="simulation-container">
+        <!-- Navigation Header -->
+        <header class="sim-header">
+            <div class="header-content">
+                <h1 class="header-title">
+                    <span class="title-icon">🌡️</span> ThermalGuard Simulation
+                </h1>
+                <a href="index.html" class="back-button">
+                    <span>⬅</span> Back
+                </a>
+            </div>
+        </header>
 
-<h2>📊 Simulation</h2>
-<a href="index.html">⬅ Back</a>
+        <!-- Main Dashboard -->
+        <main class="sim-dashboard">
+            <!-- Left Panel: Ward Selection & Controls -->
+            <section class="left-panel">
+                <!-- Ward Selection Card -->
+                <div class="card ward-selector-card glass">
+                    <h2 class="card-title">Ward Selection</h2>
+                    <select id="wardSelect" class="ward-dropdown">
+                        <option value="">Loading wards...</option>
+                    </select>
+                    
+                    <!-- Current Ward Metrics -->
+                    <div class="ward-metrics" id="wardMetrics">
+                        <div class="metric metric-loading">
+                            <div class="metric-label">Temperature</div>
+                            <div class="metric-value">--°C</div>
+                        </div>
+                        <div class="metric metric-loading">
+                            <div class="metric-label">NDVI</div>
+                            <div class="metric-value">--</div>
+                        </div>
+                        <div class="metric metric-loading">
+                            <div class="metric-label">Built-up</div>
+                            <div class="metric-value">--%</div>
+                        </div>
+                        <div class="metric risk-badge metric-loading">
+                            <div class="metric-label">Risk Level</div>
+                            <div class="metric-value">--</div>
+                        </div>
+                    </div>
+                </div>
 
-<label>Increase Tree Cover (%):</label>
-<input type="number" id="trees"><br><br>
+                <!-- Simulation Controls Card -->
+                <div class="card controls-card glass">
+                    <h2 class="card-title">Simulation Parameters</h2>
+                    
+                    <!-- Tree Cover Slider -->
+                    <div class="slider-group">
+                        <label class="slider-label">
+                            <span class="label-icon">🌳</span>
+                            <span class="label-text">Tree Cover Increase</span>
+                            <span class="label-value" id="treeValueLabel">0%</span>
+                        </label>
+                        <div class="slider-container">
+                            <input type="range" id="treeSlider" class="animated-slider" 
+                                   min="0" max="50" value="0" step="1">
+                            <div class="slider-track"></div>
+                            <div class="slider-value" id="treeValue">0%</div>
+                        </div>
+                    </div>
 
-<label>Cool Roof Adoption (%):</label>
-<input type="number" id="roofs"><br><br>
+                    <!-- Cool Roof Slider -->
+                    <div class="slider-group">
+                        <label class="slider-label">
+                            <span class="label-icon">🏢</span>
+                            <span class="label-text">Cool Roof Adoption</span>
+                            <span class="label-value" id="roofValueLabel">0%</span>
+                        </label>
+                        <div class="slider-container">
+                            <input type="range" id="roofSlider" class="animated-slider" 
+                                   min="0" max="50" value="0" step="1">
+                            <div class="slider-track"></div>
+                            <div class="slider-value" id="roofValue">0%</div>
+                        </div>
+                    </div>
 
-<button onclick="simulate()">Run Simulation</button>
+                    <!-- Reset Button -->
+                    <button class="reset-button" id="resetButton">
+                        <span>↻</span> Reset Simulation
+                    </button>
+                </div>
 
-<p id="result"></p>
+                <!-- AI Insights Card -->
+                <div class="card insights-card glass">
+                    <h2 class="card-title">AI Insights</h2>
+                    <div class="insights-text" id="insightsText">
+                        <p>Select a ward to generate insights...</p>
+                    </div>
+                </div>
+            </section>
 
-<script>
-function simulate() {
-    let trees = document.getElementById("trees").value;
-    let roofs = document.getElementById("roofs").value;
+            <!-- Right Panel: Visualizations -->
+            <section class="right-panel">
+                <!-- Before vs After Cards -->
+                <div class="comparison-section">
+                    <div class="comparison-card glass before-card">
+                        <div class="card-header">
+                            <h3>Current State</h3>
+                            <span class="badge badge-orange">BEFORE</span>
+                        </div>
+                        <div class="comparison-metrics">
+                            <div class="comp-metric">
+                                <span class="comp-label">Temperature</span>
+                                <span class="comp-value" id="beforeTemp">--°C</span>
+                            </div>
+                            <div class="comp-metric">
+                                <span class="comp-label">Heat Risk</span>
+                                <span class="comp-value" id="beforeRisk">--%</span>
+                            </div>
+                            <div class="comp-metric">
+                                <span class="comp-label">Vegetation</span>
+                                <span class="comp-value" id="beforeVeg">--%</span>
+                            </div>
+                        </div>
+                    </div>
 
-    let reduction = (trees * 0.2) + (roofs * 0.3);
+                    <div class="comparison-arrow">
+                        <div class="arrow-line"></div>
+                        <span class="arrow-icon">→</span>
+                    </div>
 
-    document.getElementById("result").innerText =
-        "Estimated Heat Reduction: " + reduction.toFixed(2) + "%";
-}
-</script>
+                    <div class="comparison-card glass after-card">
+                        <div class="card-header">
+                            <h3>Simulated Outcome</h3>
+                            <span class="badge badge-green">AFTER</span>
+                        </div>
+                        <div class="comparison-metrics">
+                            <div class="comp-metric">
+                                <span class="comp-label">Temperature</span>
+                                <span class="comp-value" id="afterTemp">--°C</span>
+                            </div>
+                            <div class="comp-metric">
+                                <span class="comp-label">Heat Risk</span>
+                                <span class="comp-value" id="afterRisk">--%</span>
+                            </div>
+                            <div class="comp-metric">
+                                <span class="comp-label">Vegetation</span>
+                                <span class="comp-value" id="afterVeg">--%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Impact Metrics Row -->
+                <div class="metrics-row">
+                    <div class="impact-card glass">
+                        <div class="impact-icon">📉</div>
+                        <div class="impact-content">
+                            <div class="impact-label">Temperature Reduction</div>
+                            <div class="impact-value" id="tempReduction">0°C</div>
+                        </div>
+                    </div>
+
+                    <div class="impact-card glass">
+                        <div class="impact-icon">📊</div>
+                        <div class="impact-content">
+                            <div class="impact-label">Risk Reduction</div>
+                            <div class="impact-value" id="riskReduction">0%</div>
+                        </div>
+                    </div>
+
+                    <div class="impact-card glass">
+                        <div class="impact-icon">🌱</div>
+                        <div class="impact-content">
+                            <div class="impact-label">Vegetation Gain</div>
+                            <div class="impact-value" id="vegGain">0%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gauge Speedometer -->
+                <div class="gauge-section">
+                    <div class="gauge-card glass">
+                        <h3 class="gauge-title">Heat Risk Meter</h3>
+                        <div class="gauge-container">
+                            <svg class="gauge-svg" viewBox="0 0 300 180" preserveAspectRatio="xMidYMid meet">
+                                <defs>
+                                    <!-- Color gradient arcs -->
+                                    <linearGradient id="riskGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#ff3366;stop-opacity:1" />
+                                        <stop offset="33%" style="stop-color:#ffaa33;stop-opacity:1" />
+                                        <stop offset="66%" style="stop-color:#ffdd00;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#00ff88;stop-opacity:1" />
+                                    </linearGradient>
+                                    
+                                    <!-- Needle gradient -->
+                                    <linearGradient id="needleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+                                    </linearGradient>
+                                    
+                                    <!-- Glow filter -->
+                                    <filter id="gaugeGlow">
+                                        <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+                                        <feMerge>
+                                            <feMergeNode in="coloredBlur"/>
+                                            <feMergeNode in="SourceGraphic"/>
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+                                
+                                <!-- Background circle -->
+                                <circle cx="150" cy="150" r="138" fill="#0f1535" stroke="rgba(255,255,255,0.1)" stroke-width="2"></circle>
+                                
+                                <!-- Gauge outer ring with gradient -->
+                                <path class="gauge-ring-low" d="M 30 150 A 120 120 0 0 1 80 50" fill="none" stroke="#ff3366" stroke-width="18" stroke-linecap="round" opacity="0.8"></path>
+                                <path class="gauge-ring-medium" d="M 80 50 A 120 120 0 0 1 150 30" fill="none" stroke="#ffaa33" stroke-width="18" stroke-linecap="round" opacity="0.8"></path>
+                                <path class="gauge-ring-high" d="M 150 30 A 120 120 0 0 1 220 50" fill="none" stroke="#ffdd00" stroke-width="18" stroke-linecap="round" opacity="0.8"></path>
+                                <path class="gauge-ring-critical" d="M 220 50 A 120 120 0 0 1 270 150" fill="none" stroke="#00ff88" stroke-width="18" stroke-linecap="round" opacity="0.8"></path>
+                                
+                                <!-- Zone background arcs (lighter) -->
+                                <path d="M 30 150 A 120 120 0 0 1 80 50" fill="none" stroke="rgba(255, 51, 102, 0.15)" stroke-width="24" stroke-linecap="round"></path>
+                                <path d="M 80 50 A 120 120 0 0 1 150 30" fill="none" stroke="rgba(255, 170, 51, 0.15)" stroke-width="24" stroke-linecap="round"></path>
+                                <path d="M 150 30 A 120 120 0 0 1 220 50" fill="none" stroke="rgba(255, 221, 0, 0.15)" stroke-width="24" stroke-linecap="round"></path>
+                                <path d="M 220 50 A 120 120 0 0 1 270 150" fill="none" stroke="rgba(0, 255, 136, 0.15)" stroke-width="24" stroke-linecap="round"></path>
+                                
+                                <!-- Tick marks -->
+                                <g class="tick-marks">
+                                    <line x1="150" y1="35" x2="150" y2="20" stroke="rgba(255,255,255,0.3)" stroke-width="2"></line>
+                                    <line x1="130" y1="45" x2="122" y2="33" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"></line>
+                                    <line x1="95" y1="60" x2="88" y2="50" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"></line>
+                                    <line x1="70" y1="85" x2="60" y2="77" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"></line>
+                                    <line x1="50" y1="115" x2="38" y2="110" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"></line>
+                                    <line x1="35" y1="150" x2="18" y2="150" stroke="rgba(255,255,255,0.3)" stroke-width="2"></line>
+                                    
+                                    <line x1="170" y1="45" x2="178" y2="33" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"></line>
+                                    <line x1="205" y1="60" x2="212" y2="50" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"></line>
+                                    <line x1="230" y1="85" x2="240" y2="77" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"></line>
+                                    <line x1="250" y1="115" x2="262" y2="110" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"></line>
+                                    <line x1="265" y1="150" x2="282" y2="150" stroke="rgba(255,255,255,0.3)" stroke-width="2"></line>
+                                </g>
+                                
+                                <!-- Center background circle -->
+                                <circle cx="150" cy="150" r="45" fill="#0a0e27" stroke="rgba(255,255,255,0.1)" stroke-width="1"></circle>
+                                
+                                <!-- Needle pivot circle -->
+                                <circle cx="150" cy="150" r="12" fill="url(#needleGradient)" filter="url(#gaugeGlow)"></circle>
+                                <circle cx="150" cy="150" r="8" fill="#000000" opacity="0.6"></circle>
+                                
+                                <!-- Needle (rotatable) -->
+                                <g id="gaugeNeedle" transform="translate(150, 150) rotate(0)">
+                                    <!-- Needle shaft -->
+                                    <polygon points="0,0 -6,-100 0,-110 6,-100" fill="url(#needleGradient)" filter="url(#gaugeGlow)"></polygon>
+                                    <!-- Needle tip glow -->
+                                    <circle cx="0" cy="-110" r="5" fill="#ff6b35" opacity="0.6"></circle>
+                                </g>
+                            </svg>
+                            
+                            <!-- Label overlay -->
+                            <div class="gauge-labels">
+                                <div class="gauge-label-low">LOW</div>
+                                <div class="gauge-label-center">
+                                    <div class="gauge-label-value" id="gaugeLabel">0%</div>
+                                    <div class="gauge-label-text">RISK</div>
+                                </div>
+                                <div class="gauge-label-high">HIGH</div>
+                            </div>
+                            
+                            <!-- Sublabel -->
+                            <div class="gauge-sublabel" id="gaugeSublabel">Safe</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chart Section -->
+                <div class="chart-section">
+                    <div class="chart-card glass">
+                        <h3 class="chart-title">Environmental Impact Comparison</h3>
+                        <canvas id="impactChart"></canvas>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner">
+            <div class="spinner-ring"></div>
+            <div class="spinner-text">Initializing Dashboard...</div>
+        </div>
+    </div>
+
+    <script src="js/ward-data.js"></script>
+    <script src="js/simulation.js"></script>
 </body>
 </html>
